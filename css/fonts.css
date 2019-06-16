@@ -1,0 +1,38 @@
+@font-face{
+    font-family: MyriadPro;
+    src: url(../fonts/MyriadPro-SemiCn.otf) format("opentype")}
+@font-face{
+    font-family: MyriadPro-header;
+    src: url(../fonts/MyriadPro-LightCond.otf) format("opentype")
+}
+
+@font-face{
+    font-family: MyriadPro-Cond;
+    src: url(../fonts/MyriadPro-Cond.otf) format("opentype")}
+
+* {
+  font-family: MyriadPro;
+}
+
+.header_h1{
+    font-family: MyriadPro-header;
+    font-size: 42pt;
+    color:#b0b8b8;
+    margin-bottom: 0%;
+    margin-top: 8pt;
+}
+
+.header_h3{
+    font-family: MyriadPro-header;
+    margin-bottom: 0%;
+    font-size: 23pt;
+    color:#b0b8b8;
+
+}
+
+.header_h4{
+    font-family: MyriadPro-header;
+    font-size: 13pt;
+    color:#b0b8b8;
+    margin-bottom: 0%;
+}    

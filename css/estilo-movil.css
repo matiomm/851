@@ -1,0 +1,173 @@
+@media only screen and (max-width: 767px) {
+  main {
+    width: 100%;
+  }
+  body {
+    background: white;
+    width: 100%;
+  }
+  .logo-nav-cont {
+    align-items: center;
+    width: 100%;
+  }
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0%;
+  }
+  .navigation ul li {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .navigation ul li a:hover {
+    font-size: 1.3em;
+    background: white;
+    color: #DF0101;
+    font-weight: bold;
+  }
+  .cont {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .botones-desktop {
+    display: none !important;
+  }
+  .botones-movil {
+    display: block !important;
+    width: 100%;
+  }
+  .botones-movil ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  .botones-desktop ul li {
+    display: block;
+    padding: 0;
+  }
+  .botones-desktop ul li a {
+    align-items: center;
+  }
+  .logo-movil {
+    width: 98%;
+  }
+  .header-icono {
+    display: none !important;
+    position: absolute;
+    top: 1%;
+  }
+  .header {
+    width: 100%;
+  }
+  .mano {
+    position: relative;
+    background: #2A3233;
+    text-align: center;
+    width: 100%;
+    height: auto !important;
+    color: white;
+    padding-top: 0.2em;
+    padding-bottom: 0em;
+    font-weight: bold;
+    font-size: 0.5em;
+  }
+  .h1 {
+    margin: 0;
+    color: white;
+    font-size: 5em;
+  }
+  .h3 {
+    margin: 0;
+    color: white;
+    font-size: 2em;
+    padding: 0;
+  }
+  .grupos {
+    width: 100%;
+  }
+  .img-tabla {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .tablepress {
+    position: relative;
+    font-size: 0.4em;
+    margin-left: 0;
+  }
+  .footer {
+    padding: 0 0;
+    margin-top: 2rem;
+    font-size: 0.5em;
+    width: 100%;
+  }
+  .img-footer {
+    height: 7em !important;
+    width:auto;
+    padding: 0;
+    margin-top: 2%;
+  }
+  .footer-fcfm {
+    width: 100%;
+  }
+  .actualizado-desktop {
+    display: none !important;
+  }
+  .actualizado-movil {
+    display: block !important;
+    font-size: 2em;
+  }
+  .group-viz svg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .container {
+    width: 100% !important;
+    margin: 0 0;
+    padding: 0 0;
+  }
+  .desktop {
+    width: 300px;
+  }
+  .tabla-movil {
+    font-size: 10pt;
+  }
+  th {
+    text-align: center !important;
+    font-size: 10pt;
+  }
+  td {
+    text-align: center;
+    font-size: 10pt;
+  }
+  .group {
+    padding-top: 0px!important;
+  }
+
+  .fcfm-desktop {
+    display: none!important;
+  }
+
+  .fcfm-movil {
+    display: block!important;
+  }
+  .titulos-modelos {
+    padding-top: 2%!important;
+  }
+  .cont-modelos {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+  .titulos-partidos-desktop {
+    display: none!important;
+  }
+  .titulos-partidos-movil {
+    display: block!important;
+    font-size: 7pt!important;
+  }
+}

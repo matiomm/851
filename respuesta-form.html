@@ -1,0 +1,183 @@
+<!Doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" http-equiv=X-UA-Compatible>
+  <script type="text/javascript" src="colores_tablas.js"></script>
+  <title> OchoCincoUno - Rusia 2018</title>
+  <link rel="icon" type="image/png" href="img/icono.png" />
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="stylesheet" href="css/estilo-movil.css" />
+  <link href="css/tablas.css" rel="stylesheet" type="text/css">
+  <link href=flechas/fixture.css rel=stylesheet>
+  <link href=css/fonts.css rel=stylesheet>
+
+</head>
+<script type="text/javascript">
+  function Mostrar_grupos() {
+    document.getElementById("grupos").style.display = "block";
+  }
+
+  function Ocultar_grupos() {
+    document.getElementById("grupos").style.display = "none";
+  }
+
+  function Mostrar_ocultar_grupos() {
+    var grupos = document.getElementById("grupos");
+    if (grupos.style.display == "none") {
+      Mostrar_grupos();
+      document.getElementById("probabilidades").style.display = "none";
+      document.getElementById("eliminatoria").style.display = "none";
+      document.getElementById("partidos").style.display = "none";
+    } else {
+      Ocultar_grupos();
+    }
+  }
+
+  function Mostrar_probabilidades() {
+    document.getElementById("probabilidades").style.display = "block";
+  }
+
+  function Ocultar_probabilidades() {
+    document.getElementById("probabilidades").style.display = "none";
+  }
+
+  function Mostrar_ocultar_probabilidades() {
+    var probabilidades = document.getElementById("probabilidades");
+    if (probabilidades.style.display == "none") {
+      Mostrar_probabilidades();
+      document.getElementById("grupos").style.display = "none";
+      document.getElementById("eliminatoria").style.display = "none";
+      document.getElementById("partidos").style.display = "none";
+      document.getElementById("tabla-movil").style.display = "none";
+    } else {
+      Ocultar_probabilidades();
+    }
+  }
+
+  function Mostrar_eliminatoria() {
+    document.getElementById("eliminatoria").style.display = "block";
+  }
+
+  function Ocultar_eliminatoria() {
+    document.getElementById("eliminatoria").style.display = "none";
+  }
+
+  function Mostrar_ocultar_eliminatoria() {
+    var eliminatoria = document.getElementById("eliminatoria");
+    if (eliminatoria.style.display == "none") {
+      Mostrar_eliminatoria();
+      document.getElementById("probabilidades").style.display = "none";
+      document.getElementById("grupos").style.display = "none";
+      document.getElementById("partidos").style.display = "none";
+      document.getElementById("tabla-movil").style.display = "none";
+    } else {
+      Ocultar_eliminatoria();
+    }
+  }
+
+  function Mostrar_partidos() {
+    document.getElementById("partidos").style.display = "block";
+  }
+
+  function Ocultar_partidos() {
+    document.getElementById("partidos").style.display = "none";
+  }
+
+  function Mostrar_ocultar_partidos() {
+    var partidos = document.getElementById("partidos");
+    if (partidos.style.display == "none") {
+      Mostrar_partidos();
+      document.getElementById("probabilidades").style.display = "none";
+      document.getElementById("grupos").style.display = "none";
+      document.getElementById("eliminatoria").style.display = "none";
+      document.getElementById("tabla-movil").style.display = "none";
+    } else {
+      Ocultar_partidos();
+    }
+  }
+
+  function Mostrar_tabla_movil() {
+    document.getElementById("tabla-movil").style.display = "block";
+  }
+
+  function Ocultar_tabla_movil() {
+    document.getElementById("tabla-movil").style.display = "none";
+  }
+
+  function Mostrar_ocultar_tabla_movil() {
+    var tablamovil = document.getElementById("tabla-movil");
+    if (tablamovil.style.display == "none") {
+      Mostrar_tabla_movil();
+      document.getElementById("partidos").style.display = "none";
+      document.getElementById("grupos").style.display = "none";
+      document.getElementById("eliminatoria").style.display = "none";
+    } else {
+      Ocultar_tabla_movil();
+    }
+  }
+</script>
+
+
+<body style="min-width:380px">
+  <header class="header">
+    <img src="img/icono.png" class="header-icono">
+    <div class="header mano">
+      <!--<div class="actualizado-desktop">
+        <h4 class="header_h4">PROBABILIDADES <span style="color:#da1f2b">ACTUALIZADAS</span></h4>
+        <h3 class="header_h3">30<span style="color:#da1f2b">/</span>06<span style="color:#da1f2b">/</span>18     <span style="color:#da1f2b">16:14</span> hrs.</h3>
+      </div>
+      <div class="actualizado-movil" style="display:none">
+        ACTUALIZADO
+        <span color=#da1f2b>30 JUNIO 2018</span> 16:14
+      </div>-->
+      <h1 class="header_h1">OCHO<span style="color:#da1f2b">CINCO</span>UNO</h1>
+      <h3 class="header_h3">PREDICCIONES<span style="color:#da1f2b">EN</span>TIEMPO<span style="color:#da1f2b">REAL</span></h3>
+    </div>
+    <div class="cont logo-nav-cont">
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Predicciones</a></li>
+          <li><a href="modelos.php">Modelos</a></li>
+          <li><a href="nosotros.php">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="cont-modelos">
+      <div class="contacto">
+        <div class="titulos-modelos">
+          <h3 class="titulo-h3">Contáctanos</h3>
+        </div>
+        <div class="arriba" style="text-align:center">
+          <form action="index.html" method="post">
+          ¡Gracias por tus comentarios!
+
+          <br><br>Vamos a considerarlos para hacer de nuestra página una mejor experiencia
+          <br><br>
+          <input type="submit" value="Volver a Predicciones" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="footer">
+    <div class="footer fcfm-desktop">
+      <img src="img/logo-fcfm.png" class="footer img-footer">
+      <img src="img/logo-isci.png" class="footer img-footer">
+      <img src="img/logo-dii.png" class="footer img-footer" width="25%">
+    </div>
+    <div class="footer fcfm-movil" style="display:none">
+      <img src="img/logo-fcfm.png" class="footer img-footer"><br>
+      <img src="img/logo-isci.png" class="footer img-footer"><br>
+      <img src="img/logo-dii.png" class="footer img-footer" width="20%">
+    </div>
+    <font size="3" color="white">Todos los derechos reservados para 851</font>
+  </footer>
+</body>
+
+</html>

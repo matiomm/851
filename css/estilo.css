@@ -1,0 +1,393 @@
+body {
+  background: white;
+  font-family: MyriadPro;
+  font-size: 1.2rem;
+  line-height: 1em;
+  margin: 0 auto;
+}
+
+
+p {
+  margin-bottom: 0;
+  font-family: MyriadPro;
+}
+
+.header-icono {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  width: 12%;
+}
+
+.cont {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: MyriadPro;
+}
+
+.header {
+  width: 100%;
+  font-family: MyriadPro-Cond;
+}
+
+.header a {
+  color: black;
+  text-decoration: none;
+  font-family: MyriadPro-Cond;
+}
+
+.img-header {
+  left: 0;
+  right: 0;
+  width: auto;
+  top: 0;
+}
+
+.logo-nav-cont {
+  align-items: center;
+  padding-top: 0.5em;
+  font-family: MyriadPro;
+}
+
+.navigation ul {
+  margin: 0 10%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-family: MyriadPro;
+}
+
+.navigation ul li {
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: MyriadPro;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 0 0;
+  transition: all 0.2s linear;
+  font-family: MyriadPro;
+}
+
+.navigation ul li a:hover {
+  font-size: 1.3em;
+  background: white;
+  color: #DF0101;
+  font-weight: bold;
+  font-family: MyriadPro;
+}
+
+.botones-desktop ul {
+  margin-top: 2%;
+  margin-left: 0;
+  margin-bottom: 0%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: MyriadPro;
+}
+
+.botones-desktop {
+  margin-left: 0;
+  margin-right: 0;
+  font-family: MyriadPro;
+  height: auto;
+}
+
+.botones-desktop ul {
+  padding: 0;
+  font-family: MyriadPro;
+}
+
+.botones-desktop ul li {
+  display: inline-block;
+  padding-right: 0;
+  margin-left: 0;
+  font-family: MyriadPro;
+}
+
+.botones-desktop ul li a {
+  display: block;
+  font-family: MyriadPro;
+}
+
+.logo {
+  font-family: MyriadPro;
+}
+
+.footer {
+  padding: 0 0;
+  text-align: center;
+  margin-top: 2rem;
+  font-family: MyriadPro;
+  background-image: url('../img/header_v2.png')
+}
+
+.img-footer {
+  text-align: center;
+  margin-top: 0;
+  padding: 1%;
+}
+
+.img-tabla {
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.fcfm-desktop {
+  color: white;
+  padding-bottom: 1em;
+  font-family: MyriadPro;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10%;
+}
+
+.mano {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  font-style: bold;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 3px;
+  font-weight: bold;
+  font-family: MyriadPro;
+  background-image: url('../img/header_v2.png')
+}
+
+.actualizado-desktop {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  font-size: 1.2em;
+  font-family: MyriadPro;
+}
+
+.h1 {
+  margin-top: 10pt;
+  padding-bottom: 0;
+  font-size: 42pt;
+  font-family: MyriadPro;
+}
+.h3 {
+  font-size: 42pt ;
+  font-family: MyriadPro;
+  margin-bottom: 10pt;
+}
+
+.groups {
+  margin: : 0!important;
+}
+
+.cursiva {
+  font-style: italic!important;
+}
+.cont-modelos {
+  text-align: center;
+  width: 60%;
+  display: inline-block;
+  margin-left: 20%;
+}
+
+.intro-form {
+  text-align: justify;
+}
+.foto-equipo {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+
+@font-face{
+    font-family: MyriadPro;
+    src: url(../fonts/MyriadPro-Regular.otf) format("opentype")}
+
+* {
+  font-family: MyriadPro;
+}
+
+th{
+  text-align: center !important;
+}
+td {
+  text-align: center;
+}
+
+.header-row {
+  margin-top: 0%!important;
+}
+
+.contacto {
+  display: inline-block;
+  width: 100%;
+}
+
+.respuesta {
+  text-align: center;
+}
+.izquierda {
+  height: 100%!important;
+  width: 50%;
+  background-color: #41494B;
+  color: white;
+  padding: 2%;
+  font-size: 10pt!important;
+  font-weight: lighter;
+  margin: 0;
+}
+.derecha {
+  width: 50%;
+  margin-right: 0;
+  height: 100%;
+  padding: 2%;
+  font-size: 10pt!important;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.contacto ul {
+  margin: 0 5%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-family: MyriadPro;
+}
+
+.contacto ul li {
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: MyriadPro;
+}
+
+.derechos {
+  font-family: MyriadPro;
+}
+
+.mod {
+  background-color: #2E64FE;
+}
+.titulos-modelos {
+  background-color: #323C3D;
+  color: white;
+  padding-top: 1%!important;
+}
+.cursor {
+  padding: 1%;
+  font-size: 12pt;
+}
+
+.lista-mod {
+  width: 100%;
+  border: 0;
+  margin: 0!important;
+  padding: 0;
+  text-align: justify;
+}
+
+.titulo-h3 {
+  margin-bottom: 0!important;
+  color: white;
+  font-size: 12pt;
+  font-weight: lighter;
+  padding: 1%;
+}
+.arriba {
+  background-color: #41494B;
+  color: white;
+  font-style: MyriadPro;
+  padding: 2%;
+  text-align: justify;
+}
+.abajo {
+  padding: 2%;
+  text-align: center;
+  float: none;
+}
+
+.partido {
+  width: 50%;
+}
+
+.datos-partidos {
+  text-align: center;
+  width: 25%;
+}
+.izquierda-partidos {
+  background-color: white;
+  width: 50%;
+  height: 100%;
+  color: white;
+  padding: 2%;
+  font-size: 10pt!important;
+  font-weight: lighter;
+}
+.formulario {
+  margin-left: 30%;
+  width: 40%;
+  text-align: center;
+}
+
+.chart{
+  width: 100%;
+  height: 380px;
+}
+.divchart{
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+.tabla-grupos{
+  padding: 30px;
+  background-color: #f0f0f0;
+  margin: 5px;
+  width: 100%;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+.fecha-partido {
+  background-color: #41494B;
+  color: white;
+  font-style: MyriadPro;
+  text-align: justify;
+  width: 100%;
+  padding: 2%;
+  font-size: 10pt;
+}
+
+.tabla-partidos {
+  width: 100%;
+  background-color: #323C3D;
+  color: white;
+  font-weight: bold;
+}
+
+#titulo-jornada{
+  margin-bottom: 20px;
+  color: white;
+  font-size: 12pt;
+  font-weight: lighter;
+  padding-top: 1%;
+  background-color: #323C3D;
+
+}
