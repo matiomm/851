@@ -17,7 +17,7 @@ globalData.matches = [
         "slot": 1,
         "annotation": "some text here about the game and other smart things we would say"
     },
-        {
+    {
         "date": "2018-06-15",
         "time_est": "11:00",
         "team1": "VEN",
@@ -33,7 +33,7 @@ globalData.matches = [
         "slot": 1,
         "annotation": "some text here about the game and other smart things we would say"
     },
-        {
+    {
         "date": "2018-06-20",
         "time_est": "11:00",
         "team1": "ARG",
@@ -49,15 +49,15 @@ globalData.matches = [
         "slot": 2,
         "annotation": "some text here about the game and other smart things we would say"
     },
-        {
+    {
         "date": "2018-06-20",
         "time_est": "14:00",
         "team1": "PAR",
         "team2": "CAT",
         "group": "b",
-        "team1_win": 0.40,
-        "team2_win": 0.34,
-        "tie_prob": 0.25,
+        "team1_win": 0.00,
+        "team2_win": 0.00,
+        "tie_prob": 1.00,
         "team1_home_color": "#ffffff",
         "team1_away_color": "#be0000",
         "team2_home_color": "#D52B1E",
@@ -65,15 +65,15 @@ globalData.matches = [
         "slot": 2,
         "annotation": "some text here about the game and other smart things we would say"
     },
-        {
+    {
         "date": "2018-06-14",
         "time_est": "11:00",
         "team1": "URU",
         "team2": "ECU",
         "group": "C",
-        "team1_win": 0.45,
-        "team2_win": 0.29,
-        "tie_prob": 0.26,
+        "team1_win": 1.00,
+        "team2_win": 0.00,
+        "tie_prob": 0.00,
         "team1_home_color": "#a81717",
         "team1_away_color": "#ffffff",
         "team2_home_color": "#e9ebea",
@@ -81,7 +81,7 @@ globalData.matches = [
         "slot": 1,
         "annotation": "some text here about the game and other smart things we would say"
     },
-        {
+    {
         "date": "2018-06-15",
         "time_est": "11:00",
         "team1": "JPN",
@@ -97,7 +97,7 @@ globalData.matches = [
         "slot": 1,
         "annotation": "some text here about the game and other smart things we would say"
     },
-        {
+    {
         "date": "2018-06-19",
         "time_est": "11:00",
         "team1": "BOL",
@@ -113,7 +113,7 @@ globalData.matches = [
         "slot": 2,
         "annotation": "some text here about the game and other smart things we would say"
     },
-        {
+    {
         "date": "2018-06-20",
         "time_est": "14:00",
         "team1": "BRA",
@@ -129,7 +129,7 @@ globalData.matches = [
         "slot": 2,
         "annotation": "some text here about the game and other smart things we would say"
     },
-        {
+    {
         "date": "2017-06-25",
         "time_est": "11:00",
         "team1": "COL",
@@ -145,7 +145,7 @@ globalData.matches = [
         "slot": 3,
         "annotation": "some text here about the game and other smart things we would say"
     },
-        {
+    {
         "date": "2018-06-15",
         "time_est": "14:00",
         "team1": "ARG",
@@ -161,7 +161,7 @@ globalData.matches = [
         "slot": 1,
         "annotation": "some text here about the game and other smart things we would say"
     },
-        {
+    {
         "date": "2018-06-19",
         "time_est": "11:00",
         "team1": "URU",
@@ -177,14 +177,14 @@ globalData.matches = [
         "slot": 2,
         "annotation": "some text here about the game and other smart things we would say"
     },
-        {
+    {
         "date": "2018-06-20",
         "time_est": "14:00",
         "team1": "ECU",
         "team2": "CHI",
         "group": "c",
         "team1_win": 0.32,
-        "team2_win": 0.44,
+        "team2_win": 0.43,
         "tie_prob": 0.25,
         "team1_home_color": "#006847",
         "team1_away_color": "#CE1126",
@@ -193,7 +193,7 @@ globalData.matches = [
         "slot": 2,
         "annotation": "some text here about the game and other smart things we would say"
     },
-        {
+    {
         "date": "2018-06-25",
         "time_est": "11:00",
         "team1": "BOL",
@@ -209,7 +209,7 @@ globalData.matches = [
         "slot": 3,
         "annotation": "some text here about the game and other smart things we would say"
     },
-        {
+    {
         "date": "2018-06-25",
         "time_est": "11:00",
         "team1": "PER",
@@ -225,7 +225,7 @@ globalData.matches = [
         "slot": 3,
         "annotation": "some text here about the game and other smart things we would say"
     },
-        {
+    {
         "date": "2018-06-15",
         "time_est": "11:00",
         "team1": "CAT",
@@ -241,7 +241,7 @@ globalData.matches = [
         "slot": 1,
         "annotation": "some text here about the game and other smart things we would say"
     },
-        {
+    {
         "date": "2017-06-25",
         "time_est": "11:00",
         "team1": "COL",
@@ -257,7 +257,7 @@ globalData.matches = [
         "slot": 3,
         "annotation": "some text here about the game and other smart things we would say"
     },
-        {
+    {
         "date": "2018-06-25",
         "time_est": "11:00",
         "team1": "CHI",
@@ -273,13 +273,13 @@ globalData.matches = [
         "slot": 3,
         "annotation": "some text here about the game and other smart things we would say"
     },
-        {
+    {
         "date": "2018-06-25",
         "time_est": "11:00",
         "team1": "ECU",
         "team2": "JPN",
         "group": "c",
-        "team1_win": 0.43,
+        "team1_win": 0.44,
         "team2_win": 0.32,
         "tie_prob": 0.25,
         "team1_home_color": "#e9ebea",
@@ -294,194 +294,194 @@ globalData.matches = [
 globalData.teams = {
     "BOL": {
         "country_id": "BOL",
-         "country": "Bolivia",
+        "country": "Bolivia",
         "group": "a",
         "win_group": "0.00",
         "sixteen": "0.07",
-        "quarter": "0.15",
+        "quarter": "0.20",
         "semi": "0.03",
         "cup": "0.00",
         "win": "0.00",
         "spi": "",
-         "spi_offense": "",
-         "spi_defense": "",
-         "color_home": "#088A08",
-         "color_away": "#CE1126"
+        "spi_offense": "",
+        "spi_defense": "",
+        "color_home": "#088A08",
+        "color_away": "#CE1126"
     },
     "BRA": {
         "country_id": "BRA",
-         "country": "Brasil",
+        "country": "Brasil",
         "group": "a",
         "win_group": "0.84",
         "sixteen": "0.12",
         "quarter": "1.00",
-        "semi": "0.80",
+        "semi": "0.81",
         "cup": "0.61",
         "win": "0.46",
         "spi": "",
-         "spi_offense": "0",
-         "spi_defense": "0",
-         "color_home": "#FFFF00",
-         "color_away": "#ffffff"
+        "spi_offense": "0",
+        "spi_defense": "0",
+        "color_home": "#FFFF00",
+        "color_away": "#ffffff"
     },
     "PER":{
         "country_id": "PER",
-         "country":"Perú",
+        "country":"Perú",
         "group":"a",
         "win_group": "0.11",
         "sixteen": "0.50",
-        "quarter": "0.81",
+        "quarter": "0.84",
         "semi": "0.42",
         "cup": "0.15",
         "win": "0.06",
         "spi":"79.78",
-         "spi_offense":"1.9905",
-         "spi_defense":"0.8046",
-         "color_home":"#FF0000",
-         "color_away":"#ffffff"
+        "spi_offense":"1.9905",
+        "spi_defense":"0.8046",
+        "color_home":"#FF0000",
+        "color_away":"#ffffff"
     },
     "VEN":{
         "country_id": "VEN",
-         "country":"Venezuela",
+        "country":"Venezuela",
         "group":"a",
         "win_group": "0.05",
         "sixteen": "0.31",
-        "quarter": "0.66",
-        "semi": "0.23",
+        "quarter": "0.71",
+        "semi": "0.24",
         "cup": "0.06",
         "win": "0.01",
         "spi":"79.78",
-         "spi_offense":"1.9905",
-         "spi_defense":"0.8046",
-         "color_home":"#8A0808",
-         "color_away":"#ffffff"
+        "spi_offense":"1.9905",
+        "spi_defense":"0.8046",
+        "color_home":"#8A0808",
+        "color_away":"#ffffff"
     },
     "ARG": {
         "country_id": "ARG",
-         "country": "Argentina",
+        "country": "Argentina",
         "group": "b",
-        "win_group": "0.09",
-        "sixteen": "0.56",
-        "quarter": "0.83",
-        "semi": "0.51",
+        "win_group": "0.10",
+        "sixteen": "0.60",
+        "quarter": "0.84",
+        "semi": "0.52",
         "cup": "0.24",
         "win": "0.13",
         "spi": "71.26",
-         "spi_offense": "1.4788",
-         "spi_defense": "0.9932",
-         "color_home": "#3498DB",
-         "color_away": "#FDDA24"
+        "spi_offense": "1.4788",
+        "spi_defense": "0.9932",
+        "color_home": "#3498DB",
+        "color_away": "#FDDA24"
     },
     "COL": {
         "country_id": "COL",
-         "country": "Colombia",
+        "country": "Colombia",
         "group": "b",
-        "win_group": "0.81",
-        "sixteen": "0.14",
-        "quarter": "0.99",
+        "win_group": "0.84",
+        "sixteen": "0.13",
+        "quarter": "0.98",
         "semi": "0.59",
-        "cup": "0.34",
+        "cup": "0.33",
         "win": "0.14",
         "spi": "69.44",
-         "spi_offense": "1.6398",
-         "spi_defense": "1.2349",
-         "color_home": "#fcc41a",
-         "color_away": "#002B7F"
+        "spi_offense": "1.6398",
+        "spi_defense": "1.2349",
+        "color_home": "#fcc41a",
+        "color_away": "#002B7F"
     },
     "PAR": {
         "country_id": "PAR",
-         "country": "Paraguay",
+        "country": "Paraguay",
         "group": "b",
-        "win_group": "0.05",
-        "sixteen": "0.17",
-        "quarter": "0.46",
-        "semi": "0.13",
-        "cup": "0.03",
-        "win": "0.01",
-        "spi": "69.44",
-         "spi_offense": "1.6398",
-         "spi_defense": "1.2349",
-         "color_home": "#FF0000",
-         "color_away": "#002B7F"
-    },
-    "CAT": {
-        "country_id": "CAT",
-         "country": "Catar",
-        "group": "b",
-        "win_group": "0.04",
-        "sixteen": "0.13",
-        "quarter": "0.36",
-        "semi": "0.09",
+        "win_group": "0.03",
+        "sixteen": "0.15",
+        "quarter": "0.35",
+        "semi": "0.10",
         "cup": "0.02",
         "win": "0.00",
         "spi": "69.44",
-         "spi_offense": "1.6398",
-         "spi_defense": "1.2349",
-         "color_home": "#8A0808",
-         "color_away": "#002B7F"
+        "spi_offense": "1.6398",
+        "spi_defense": "1.2349",
+        "color_home": "#FF0000",
+        "color_away": "#002B7F"
+    },
+    "CAT": {
+        "country_id": "CAT",
+        "country": "Catar",
+        "group": "b",
+        "win_group": "0.03",
+        "sixteen": "0.12",
+        "quarter": "0.29",
+        "semi": "0.07",
+        "cup": "0.01",
+        "win": "0.00",
+        "spi": "69.44",
+        "spi_offense": "1.6398",
+        "spi_defense": "1.2349",
+        "color_home": "#8A0808",
+        "color_away": "#002B7F"
     },
     "CHI":{
         "country_id": "CHI",
-         "country":"Chile",
+        "country":"Chile",
         "group":"c",
-        "win_group": "0.31",
-        "sixteen": "0.28",
-        "quarter": "0.76",
+        "win_group": "0.24",
+        "sixteen": "0.35",
+        "quarter": "0.79",
         "semi": "0.36",
-        "cup": "0.18",
+        "cup": "0.17",
         "win": "0.06",
         "spi":"88.91",
-         "spi_offense":"3.1989",
-         "spi_defense":"0.7744",
-         "color_home":"#FF0000",
-         "color_away":"#be0000"
+        "spi_offense":"3.1989",
+        "spi_defense":"0.7744",
+        "color_home":"#FF0000",
+        "color_away":"#be0000"
     },
     "ECU":{
         "country_id": "ECU",
-         "country":"Ecuador",
+        "country":"Ecuador",
         "group":"c",
-        "win_group": "0.21",
-        "sixteen": "0.25",
-        "quarter": "0.65",
-        "semi": "0.26",
-        "cup": "0.11",
-        "win": "0.03",
+        "win_group": "0.03",
+        "sixteen": "0.16",
+        "quarter": "0.44",
+        "semi": "0.13",
+        "cup": "0.05",
+        "win": "0.02",
         "spi":"88.91",
-         "spi_offense":"3.1989",
-         "spi_defense":"0.7744",
-         "color_home":"#fcc41a",
-         "color_away":"#be0000"
+        "spi_offense":"3.1989",
+        "spi_defense":"0.7744",
+        "color_home":"#fcc41a",
+        "color_away":"#be0000"
     },
     "JPN":{
         "country_id": "JPN",
-         "country":"Japón",
+        "country":"Japón",
         "group":"c",
-        "win_group": "0.13",
-        "sixteen": "0.20",
-        "quarter": "0.52",
+        "win_group": "0.10",
+        "sixteen": "0.22",
+        "quarter": "0.57",
         "semi": "0.17",
         "cup": "0.06",
         "win": "0.02",
         "spi":"88.91",
-         "spi_offense":"3.1989",
-         "spi_defense":"0.7744",
-         "color_home":"#0404B4",
-         "color_away":"#be0000"
+        "spi_offense":"3.1989",
+        "spi_defense":"0.7744",
+        "color_home":"#0404B4",
+        "color_away":"#be0000"
     },
     "URU": {
         "country_id": "URU",
-         "country": "Uruguay",
+        "country": "Uruguay",
         "group": "c",
-        "win_group": "0.35",
-        "sixteen": "0.28",
-        "quarter": "0.80",
-        "semi": "0.41",
-        "cup": "0.22",
-        "win": "0.08",
+        "win_group": "0.63",
+        "sixteen": "0.26",
+        "quarter": "0.98",
+        "semi": "0.56",
+        "cup": "0.29",
+        "win": "0.10",
         "spi": "76.87",
-         "spi_offense": "1.5538",
-         "spi_defense": "0.6937",
-         "color_home": "#3498DB",
-         "color_away": "#CE1126"
+        "spi_offense": "1.5538",
+        "spi_defense": "0.6937",
+        "color_home": "#3498DB",
+        "color_away": "#CE1126"
     }
 };
