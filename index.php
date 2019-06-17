@@ -277,11 +277,7 @@
 
   function sortTable(n) {
     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-    if (document.getElementById('tabla-movil').style.display == 'none') {
-      table = document.getElementById("tablepress-4");
-    } else {
-      table = document.getElementById("tablepress-2")
-    }
+    table = document.getElementById("tablepress-4");
     switching = true;
     // Set the sorting direction to ascending:
     dir = "desc";
@@ -290,16 +286,16 @@
     while (switching) {
       // Start by saying: no switching is done:
       switching = false;
-      rows = table.getElementsByTagName("TR");
+      rows = table.getElementsByTagName("tr");
       /* Loop through all table rows (except the
       first, which contains table headers): */
-      for (i = 1; i < (rows.length - 1); i++) {
+      for (i =0; i < (rows.length - 1); i++) {
         // Start by saying there should be no switching:
         shouldSwitch = false;
         /* Get the two elements you want to compare,
         one from current row and one from the next: */
-        x = rows[i].getElementsByTagName("TD")[n].innerHTML;
-        y = rows[i + 1].getElementsByTagName("TD")[n].innerHTML;
+        x = rows[i].getElementsByTagName("td")[n].innerHTML;
+        y = rows[i + 1].getElementsByTagName("td")[n].innerHTML;
         /* Check if the two rows should switch place,
         based on the direction, asc or desc: */
         if (isNaN(parseFloat(x))) {
@@ -346,41 +342,45 @@
 include 'header.php';
 ?>
   <main class="main">
+      <br>
     <div class="cont">
+
       <section id="rusia" class="rusia">
         <section class="botones-desktop">
-          <ul>
-            <li>
-              <input class="logo" type="image" src="img/CA2019/grupos.png" onclick="Mostrar_ocultar_grupos()" />
-            </li>
-            <li>
-              <input class="logo" type="image" src="img/CA2019/probabilidades.png" onclick="Mostrar_ocultar_probabilidades()" />
-            </li>
-            <li>
-              <input class="logo" type="image" src="img/CA2019/eliminacion.png" onclick="Mostrar_ocultar_eliminatoria()" />
-            </li>
-            <li>
-              <input class="logo" type="image" src="img/CA2019/partidos.png" onclick="Mostrar_ocultar_partidos()" />
-            </li>
+            <div class="form-row">
+                <div class="col-3">
+                    <input class="logo" type="image" src="img/CA2019/grupos.png" onclick="Mostrar_ocultar_grupos()" width="100%"/>
+                </div>
+                <div class="col-3">
+                    <input class="logo" type="image" src="img/CA2019/probabilidades.png" onclick="Mostrar_ocultar_probabilidades()" width="100%"/>
+                </div>
+                <div class="col-3">
+                    <input class="logo" type="image" src="img/CA2019/eliminacion.png" onclick="Mostrar_ocultar_eliminatoria()" width="100%"/>
+                </div>
+                <div class="col-3">
+                    <input class="logo" type="image" src="img/CA2019/partidos.png" onclick="Mostrar_ocultar_partidos()" width="100%"/>
+                </div>
+            </div>
+        </section>
+        <section class="botones-movil" style="display: none">
+            <div class="form-row">
+                <div class="col-3">
+                    <input class="logo-movil" type="image" src="img-movil/CA2019/grupos.png" onclick="Mostrar_ocultar_grupos()" width="100%"/>
+                </div>
+                <div class="col-3">
+                    <input class="logo-movil" type="image" src="img-movil/CA2019/probabilidades.png" onclick="Mostrar_ocultar_probabilidades()" width="100%"/>
+                </div>
+                <div class="col-3">
+                    <input class="logo-movil" type="image" src="img-movil/CA2019/eliminacion.png" onclick="Mostrar_ocultar_eliminatoria()" width="100%"/>
+                </div>
+                <div class="col-3">
+                    <input class="logo-movil" type="image" src="img-movil/CA2019/partidos.png" onclick="Mostrar_ocultar_partidos()" width="100%"/>
+                </div>
+            </div>
+        </section>
 
-          </ul>
-        </section>
-        <section class="botones-movil" style="display:none">
-          <ul>
-            <li>
-              <input class="logo-movil" type="image" src="img-movil/CA2019/grupos.png" onclick="Mostrar_ocultar_grupos()" />
-            </li>
-            <li>
-              <input class="logo-movil" type="image" src="img-movil/CA2019/probabilidades.png" onclick="Mostrar_ocultar_tabla_movil()" />
-            </li>
-            <li>
-              <input class="logo-movil" type="image" src="img-movil/CA2019/eliminacion.png" onclick="Mostrar_ocultar_eliminatoria()" />
-            </li>
-            <li>
-              <input class="logo-movil" type="image" src="img-movil/CA2019/partidos.png" onclick="Mostrar_ocultar_partidos()" />
-            </li>
-          </ul>
-        </section>
+
+
         <div id="grupos" class="grupos" style="background-color:white">
           <img src="img/banner-grupos.png" class="tabla img-tabla">
 
@@ -562,210 +562,12 @@ include 'header.php';
         </div>
         <div id="tabla-movil" class="tabla-movil" style="display:none">
           <img src="img/banner-rusia.png" class="tabla img-tabla">
-          <div class="tabla-movil" aling="center">
-            <table class="tablepress">
-              <table id="tablepress-2" class="tablepress tablepress-id-2 wc">
-                <thead>
-                  <tr class="row-1 odd">
-                    <th class="column-1">&nbsp;</th>
-                    <th class="column-2" onclick="sortTable(1)">Equipo</th>
-                    <th class="column-3" onclick="sortTable(2)">Final</th>
-                    <th class="column-4" onclick="sortTable(3)">Campeon</th>
-                  </tr>
-                </thead>
-                <tbody class="row-hover">
-                  <tr class="row-1 even">
-                    <td class="column-1"><img src="banderas/Brasil30x20.png" alt=""></td>
-                    <td class="column-2">Brasil</td>
-                    <td class="column-3">60.4%</td>
-                    <td class="column-4">45.5%</td>
-                  </tr>
-                  <tr class="row-2 odd">
-                    <td class="column-1"><img src="banderas/Bolivia30x20.png" alt=""></td>
-                    <td class="column-2">Bolivia</td>
-                    <td class="column-3">0%</td>
-                    <td class="column-4">0%</td>
-                  </tr>
-                  <tr class="row-3 even">
-                    <td class="column-1"><img src="banderas/Venezuela30x20.png" alt=""></td>
-                    <td class="column-2">Venezuela</td>
-                    <td class="column-3">5.2%</td>
-                    <td class="column-4">1.2%</td>
-                  </tr>
-                  <tr class="row-4 odd">
-                    <td class="column-1"><img src="banderas/Perú30x20.png" alt=""></td>
-                    <td class="column-2">Perú</td>
-                    <td class="column-3">15.1%</td>
-                    <td class="column-4">6.5%</td>
-                  </tr>
-                  <tr class="row-5 even">
-                    <td class="column-1"><img src="banderas/Argentina30x20.png" alt=""></td>
-                    <td class="column-2">Argentina</td>
-                    <td class="column-3">32.5%</td>
-                    <td class="column-4">15.6%</td>
-                  </tr>
-                  <tr class="row-6 odd">
-                    <td class="column-1"><img src="banderas/Colombia30x20.png" alt=""></td>
-                    <td class="column-2">Colombia</td>
-                    <td class="column-3">26.4%</td>
-                    <td class="column-4">11.8%</td>
-                  </tr>
-                  <tr class="row-7 even">
-                    <td class="column-1"><img src="banderas/Paraguay30x20.png" alt=""></td>
-                    <td class="column-2">Paraguay</td>
-                    <td class="column-3">3.0%</td>
-                    <td class="column-4">0%</td>
-                  </tr>
-                  <tr class="row-8 odd">
-                    <td class="column-1"><img src="banderas/Catar30x20.png" alt=""></td>
-                    <td class="column-2">Catar</td>
-                    <td class="column-3">1.6%</td>
-                    <td class="column-4">0%</td>
-                  </tr>
-                  <tr class="row-9 even">
-                    <td class="column-1"><img src="banderas/Uruguay30x20.png" alt=""></td>
-                    <td class="column-2">Uruguay</td>
-                    <td class="column-3">21.4%</td>
-                    <td class="column-4">8.0%</td>
-                  </tr>
-                  <tr class="row-10 odd">
-                    <td class="column-1"><img src="banderas/Ecuador30x20.png" alt=""></td>
-                    <td class="column-2">Ecuador</td>
-                    <td class="column-3">10.7%</td>
-                    <td class="column-4">3.1%</td>
-                  </tr>
-                  <tr class="row-11 even">
-                    <td class="column-1"><img src="banderas/Japón30x20.png" alt=""></td>
-                    <td class="column-2">Japón</td>
-                    <td class="column-3">6.0%</td>
-                    <td class="column-4">1.5%</td>
-                  </tr>
-                  <tr class="row-12 odd">
-                    <td class="column-1"><img src="banderas/Chile30x20.png" alt=""></td>
-                    <td class="column-2">Chile</td>
-                    <td class="column-3">17.3%</td>
-                    <td class="column-4">5.9%</td>
-                  </tr>
-                </tbody>
-              </table>
-
-            </table>
-          </div>
         </div>
         <div id="probabilidades" class="probabilidades" style="display:none">
           <img src="img/banner-rusia.png" class="tabla img-tabla">
-          <div class="tabla-desktop" align="center">
-            <table class="tablepress">
-              <!-- PEGAR ARCHIVO TABLA-DESKTOP.TXT -->
-              <table id="tablepress-4" class=" tablepress tablepress-id-4 wc">
-                <thead>
-                  <tr class="row-1 odd">
-                    <th class="column-1">&nbsp;</th>
-                    <th class="column-2" onclick="sortTable(1)">Equipo</th>
-                    <th class="column-3" onclick="sortTable(2)">Cuartos</th>
-                    <th class="column-4" onclick="sortTable(3)">Semifinal</th>
-                    <th class="column-4" onclick="sortTable(4)">Final</th>
-                    <th class="column-6" onclick="sortTable(5)">Campeón</th>
-                  </tr>
-                </thead>
-                <tbody class="row-hover">
-                  <tr class="row-1 even">
-                    <td class="column-1"><img src="banderas/Brasil30x20.png" class="alignnone size-medium wp-image-1723" /></td>
-                    <td class="column-2">Brasil</td>
-                    <td class="column-3">98.8%</td>
-                    <td class="column-4">79.1%</td>
-                    <td class="column-5">60.4%</td>
-                    <td class="column-6">45.5%</td>
-                  </tr>
-                  <tr class="row-2 odd">
-                    <td class="column-1"><img src="banderas/Bolivia30x20.png" class="alignnone size-medium wp-image-1723" /></td>
-                    <td class="column-2">Bolivia</td>
-                    <td class="column-3">17.6%</td>
-                    <td class="column-4">3.0%</td>
-                    <td class="column-5">
-                      <1%</td> <td class="column-6">
-                        <1%</td> </tr> <tr class="row-3 even">
-                    <td class="column-1"><img src="banderas/Venezuela30x20.png" class="alignnone size-medium wp-image-1723" /></td>
-                    <td class="column-2">Venezuela</td>
-                    <td class="column-3">59.5%</td>
-                    <td class="column-4">21.1%</td>
-                    <td class="column-5">5.2%</td>
-                    <td class="column-6">1.2%</td>
-                  </tr>
-                  <tr class="row-4 odd">
-                    <td class="column-1"><img src="banderas/Perú30x20.png" class="alignnone size-medium wp-image-1723" /></td>
-                    <td class="column-2">Perú</td>
-                    <td class="column-3">85.0%</td>
-                    <td class="column-4">44.1%</td>
-                    <td class="column-5">15.1%</td>
-                    <td class="column-6">6.5%</td>
-                  </tr>
-                  <tr class="row-5 even">
-                    <td class="column-1"><img src="banderas/Argentina30x20.png" class="alignnone size-medium wp-image-1723" /></td>
-                    <td class="column-2">Argentina</td>
-                    <td class="column-3">93.1%</td>
-                    <td class="column-4">57.8%</td>
-                    <td class="column-5">32.5%</td>
-                    <td class="column-6">15.6%</td>
-                  </tr>
-                  <tr class="row-6 odd">
-                    <td class="column-1"><img src="banderas/Colombia30x20.png" class="alignnone size-medium wp-image-1723" /></td>
-                    <td class="column-2">Colombia</td>
-                    <td class="column-3">89.9%</td>
-                    <td class="column-4">52.0%</td>
-                    <td class="column-5">26.4%</td>
-                    <td class="column-6">11.8%</td>
-                  </tr>
-                  <tr class="row-7 even">
-                    <td class="column-1"><img src="banderas/Paraguay30x20.png" class="alignnone size-medium wp-image-1723" /></td>
-                    <td class="column-2">Paraguay</td>
-                    <td class="column-3">45.8%</td>
-                    <td class="column-4">13.1%</td>
-                    <td class="column-5">3.0%</td>
-                    <td class="column-6">
-                      <1%</td> </tr> <tr class="row-8 odd">
-                    <td class="column-1"><img src="banderas/Catar30x20.png" class="alignnone size-medium wp-image-1723" /></td>
-                    <td class="column-2">Catar</td>
-                    <td class="column-3">36.2%</td>
-                    <td class="column-4">8.8%</td>
-                    <td class="column-5">1.6%</td>
-                    <td class="column-6">
-                      <1%</td> </tr>
-                    <tr class="row-9 even">
-                    <td class="column-1"><img src="banderas/Uruguay30x20.png" class="alignnone size-medium wp-image-1723" /></td>
-                    <td class="column-2">Uruguay</td>
-                    <td class="column-3">80.1%</td>
-                    <td class="column-4">41.4%</td>
-                    <td class="column-5">21.4%</td>
-                    <td class="column-6">8.0%</td>
-                  </tr>
-                  <tr class="row-10 odd">
-                    <td class="column-1"><img src="banderas/Ecuador30x20.png" class="alignnone size-medium wp-image-1723" /></td>
-                    <td class="column-2">Ecuador</td>
-                    <td class="column-3">65.5%</td>
-                    <td class="column-4">26.1%</td>
-                    <td class="column-5">10.7%</td>
-                    <td class="column-6">3.1%</td>
-                  </tr>
-                  <tr class="row-11 even">
-                    <td class="column-1"><img src="banderas/Japón30x20.png" class="alignnone size-medium wp-image-1723" /></td>
-                    <td class="column-2">Japón</td>
-                    <td class="column-3">52.4%</td>
-                    <td class="column-4">17.2%</td>
-                    <td class="column-5">6.0%</td>
-                    <td class="column-6">1.5%</td>
-                  </tr>
-                  <tr class="row-12 odd">
-                    <td class="column-1"><img src="banderas/Chile30x20.png" class="alignnone size-medium wp-image-1723" /></td>
-                    <td class="column-2">Chile</td>
-                    <td class="column-3">76.1%</td>
-                    <td class="column-4">36.3%</td>
-                    <td class="column-5">17.3%</td>
-                    <td class="column-6">5.9%</td>
-                  </tr>
-                </tbody>
-              </table>
-            </table>
+          <div class="row">
+              <div class="col-lg-12" id="tabla-probabilidades">
+              </div>
           </div>
         </div>
         <div id="partidos" class="partidos" style="display:none">
@@ -1589,6 +1391,27 @@ include 'header.php';
               d3.select("#j3").select("#p"+(i%6)).select(".fecha-partido").text(formatofecha(new Date(Date.parse(datap[i].date))));
           }
       }
+      tabla = d3.select("#tabla-probabilidades").append("table").attr("class","tablepress tablepress-id-2 wc").attr("id","tablepress-4").style("width","100%");
+      thead = tabla.append("thead");
+        thead.append("th").style("width","10%").text("");
+        thead.append("th").style("width","22%").text("Equipo");
+        thead.append("th").attr("onClick","sortTable(2)").style("cursor","pointer").style("width","17%").text("Cuartos");
+        thead.append("th").attr("onClick","sortTable(3)").style("cursor","pointer").style("width","17%").text("Semifinal");
+        thead.append("th").attr("onClick","sortTable(4)").style("cursor","pointer").style("width","17%").text("Final");
+        thead.append("th").attr("onClick","sortTable(5)").style("cursor","pointer").style("width","17%").text("Campeón");
+        tbody = tabla.append("tbody");
+      for (i in data){
+          tr = tbody.append("tr");
+          tr.append("td").style("text-align","center").append("img").attr("src","banderas/"+data[i].country+"30x20.png");
+          tr.append("td").style("border-right","2px solid").style("font-weight","bold").text(data[i].country);
+          tr.append("td").style("text-align","center").style("background-color", "rgba(255, 94, 47, "+data[i].quarter+")").text( (parseFloat(data[i].quarter)<0.01) ? ("<1%") : ((Math.round( (data[i].quarter*100) * 10 ) / 10)+"%") );
+          tr.append("td").style("text-align","center").style("background-color", "rgba(255, 94, 47, "+data[i].semi+")").text( (parseFloat(data[i].semi)<0.01) ? ("<1%") : ((Math.round( (data[i].semi*100) * 10 ) / 10)+"%") );
+          tr.append("td").style("text-align","center").style("background-color", "rgba(255, 94, 47, "+data[i].cup+")").text( (parseFloat(data[i].cup)<0.01) ? ("<1%") : ((Math.round( (data[i].cup*100) * 10 ) / 10)+"%") );
+          tr.append("td").style("text-align","center").style("background-color", "rgba(255, 94, 47, "+data[i].win+")").text( (parseFloat(data[i].win)<0.01) ? ("<1%") : ((Math.round( (data[i].win*100) * 10 ) / 10)+"%") );
+      }
+      sortTable(2);
+
+
       d3.selectAll(".nompais").style("text-align","left");
 
     }
