@@ -377,7 +377,7 @@
 
             <div class="col-lg-4">
                 <h3>Jornada 1</h3>
-                <table>
+                <table style="width: 100%;">
                     <thead>
                         <th></th>
                         <th>Local</th>
@@ -403,7 +403,7 @@
 
             <div class="col-lg-4">
                 <h3>Jornada 2</h3>
-                <table>
+                <table style="width: 100%;">
                     <thead>
                     <th></th>
                     <th>Local</th>
@@ -429,7 +429,7 @@
 
             <div class="col-lg-4">
                 <h3>Jornada 3</h3>
-                <table>
+                <table style="width: 100%;">
                     <thead>
                     <th></th>
                     <th>Local</th>

@@ -366,7 +366,7 @@ include 'header.php';
                     <br><br>Para ver más en detalle nuestro modelos de predicción y simulación, revisalos en la pestaña <a href="modelos.html"><span style="color:#ff9911">Modelos</span></a>
                 </li>
                 <li class="derecha">
-                    Foto Equipo
+                    <img src="img/nosotros.jpeg" width="100%">
                 </li>
             </ul>
         </div>

@@ -27,7 +27,7 @@
     }
 
     $db_name = "851";
-    $db_user = "root";
+    $db_user = "ochocincouno";
     $db_pass = "Base851-fcfm";
     $db_host = "localhost";
     $db = new mysqli($db_host, $db_user, $db_pass, $db_name);

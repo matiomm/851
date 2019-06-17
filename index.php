@@ -399,7 +399,7 @@ include 'header.php';
                   <span style="font-size: 30px;font-weight: bold" id="pt1"></span>
                   <img align="right" id="bt1">
                 </div>
-                <table>
+                <table style="width: 100%">
                   <thead style="border-bottom: 2px solid #c7c7c7;">
                     <th width="23%">GANA</th>
                     <th width="23%">EMPATA</th>
@@ -450,7 +450,7 @@ include 'header.php';
                   <span style="font-size: 30px;font-weight: bold" id="pt1"></span>
                   <img align="right" id="bt1">
                 </div>
-                <table>
+                <table style="width: 100%">
                   <thead style="border-bottom: 2px solid #c7c7c7;">
                   <th width="23%">GANA</th>
                   <th width="23%">EMPATA</th>
@@ -501,7 +501,7 @@ include 'header.php';
                   <span style="font-size: 30px;font-weight: bold" id="pt1"></span>
                   <img align="right" id="bt1">
                 </div>
-                <table>
+                <table style="width: 100%">
                   <thead style="border-bottom: 2px solid #c7c7c7;">
                   <th width="23%">GANA</th>
                   <th width="23%">EMPATA</th>
@@ -550,12 +550,12 @@ include 'header.php';
                 <li>Campeón</li>
               </ul>
             </div>
-            <div class="cursor" style="text-align:center">
+           <!--<div class="cursor" style="text-align:center">
               Pasa el cursor sobre el nombre de las selecciones para ver sus probabilidades.
-            </div>
+            </div>-->
             <div class="abajo">
               <div class="bracket" aling="center">
-                <iframe src="Bracket/bracket.html" width="100%" height="1300" frameborder="0"></iframe>
+                  <div class="divchart"><img src="img/bracket.PNG"></div>
               </div>
             </div>
           </div>
@@ -1453,6 +1453,7 @@ include 'header.php';
                     .attr("class",db[j]["country"]+(i+1))
                     .attr("d", linea(dlpaises[j][i]))
                     .style("stroke-width", 20)
+                    .style("fill","none")
                     .style("stroke", db[j]["color_home"])
           }
         }
