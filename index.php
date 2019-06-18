@@ -376,7 +376,7 @@
                 </div>
             </div>
         </section>
-        <div id="partidos" class="partidos">
+        <div id="partidos" class="partidos" style="display: none">
           <img src="img/banner-partidos.png" class="tabla img-tabla">
 
 
@@ -1100,6 +1100,7 @@
           </div>
         </div>
       </section>
+
   </main>
 
 <script type="text/javascript">
