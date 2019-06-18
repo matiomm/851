@@ -335,6 +335,19 @@
       }
     }
   }
+  function cerrar_cct() {
+      document.getElementById("cct").style.display = "none";
+  }
+  function mostrar_cct() {
+      console.log(document.getElementById("conchta").style.display);
+      if (document.getElementById("conchta").style.display=="none"){
+          document.getElementById("conchta").style.display = "block";
+          document.getElementById("bccct").innerText = "-";
+      } else {
+          document.getElementById("conchta").style.display = "none";
+          document.getElementById("bccct").innerText = "+";
+      }
+  }
 </script>
 
 <body style="min-width:380px">
@@ -376,55 +389,77 @@
                 </div>
             </div>
         </section>
+          <section class="concurso">
+              <div id="cct">
+                  <div class="titulos-modelos">
+                      <h3 class="titulo-h3" style="text-align:center">
+                          <div class="row">
+                              <div id="bccct" class="col-1" onclick="mostrar_cct()" style="cursor:pointer;">-</div>
+                              <div class="col-10">Participa ¿Cuáles serán los resultados de Chile vs Tailandia y Chile vs Ecuador?</div>
+                              <div class="col-1" onclick="cerrar_cct()" style="cursor: pointer;">X</div>
+                          </div>
+                      </h3>
+                  </div>
+                  <form method="post" action="proceso3.php" target="_blank" id="conchta">
+                  <div class="form-row" align="center" style="margin-top: 10px;">
+                      <div class="col-lg-6">
+                          <table>
+                              <tbody>
+                              <tr>
+                                  <td width="20%"><img src="banderas/Tailandia30x20.png" alt="Tailandia" style='border:1px solid lightgray;'></td>
+                                  <td width="25%"><input name="gt" type="number" class="form-control" max="99" min="0" required></td>
+                                  <td>-</td>
+                                  <td width="25%"><input name="gc" type="number" class="form-control" max="99" min="0" required></td>
+                                  <td width="20%"><img src="banderas/Chile30x20.png" alt="Chile" style='border:1px solid lightgray;'></td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                      <div class="col-lg-6">
+                          <table>
+                              <tbody>
+                              <tr>
+                                  <td width="20%"><img src="banderas/Ecuador30x20.png" alt="Ecuador" style='border:1px solid lightgray;'></td>
+                                  <td width="25%"><input name="ge" type="number" class="form-control" max="99" min="0" required></td>
+                                  <td>-</td>
+                                  <td width="25%"><input name="gc2" type="number" class="form-control" max="99" min="0" required></td>
+                                  <td width="20%"><img src="banderas/Chile30x20.png" alt="Chile" style='border:1px solid lightgray;'></td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                        <br><br>
+                      <div class="col-lg-1">
+                          Nombre:
+                      </div>
+                      <div class="col-lg-3">
+                          <input type="text" name="nombre" class="form-control" required>
+                      </div>
+
+                      <div class="col-lg-1">
+                          Mail:
+                      </div>
+                      <div class="col-lg-3">
+                          <input type="email" name="mail" class="form-control" required>
+                      </div>
+
+                      <div class="col-lg-1">
+                          Telefono:
+                      </div>
+                      <div class="col-lg-3">
+                          <input type="tel" name="tel" class="form-control" required>
+                      </div>
+                      <br><br>
+                      <div class="col-lg-12">
+                          <input type="image" name="submit" src="img/Btn_enviar.jpg" width="120px" alt="Submit">
+                      </div>
+                  </div>
+              </form>
+              </div>
+          </section>
         <div id="partidos" class="partidos" style="display: none">
           <img src="img/banner-partidos.png" class="tabla img-tabla">
 
-
-          <!--<div class="titulos-modelos">
-            <h3 class="titulo-h3" style="text-align:center"><a>Participa ¿Cuál será el resultado de Chile vs Japón?</a></h3>
-          </div>
-        -->
-          <!--<form method="post" action="proceso2.php" target="_blank">
-          <div class="form-row" align="center" style="margin-top: 10px;">
-            <div class="col-lg-3">
-              <table>
-                <tbody>
-                <tr>
-                  <td width="20%"><img src="banderas/Japón30x20.png" alt="Japón" style='border:1px solid lightgray;'></td>
-                  <td width="25%"><input name="gj" type="number" class="form-control" max="99" min="0"></td>
-                  <td>-</td>
-                  <td width="25%"><input name="gc" type="number" class="form-control" max="99" min="0"></td>
-                  <td width="20%"><img src="banderas/Chile30x20.png" alt="Chile" style='border:1px solid lightgray;'></td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div class="col-lg-1">
-              Nombre:
-            </div>
-            <div class="col-lg-2">
-              <input type="text" name="nombre" class="form-control">
-            </div>
-
-            <div class="col-lg-1">
-              Mail:
-            </div>
-            <div class="col-lg-2">
-              <input type="email" name="mail" class="form-control">
-            </div>
-
-            <div class="col-lg-1">
-              Telefono:
-            </div>
-            <div class="col-lg-2">
-              <input type="tel" name="tel" class="form-control">
-            </div>
-            <div class="col-lg-12">
-              <input type="image" name="submit" src="img/Btn_enviar.jpg" width="120px" alt="Submit">
-            </div>
-          </div>
-        </form>-->
 
           <!--
                     <div class="container-real-time-graph" width="90%" height="100%">
