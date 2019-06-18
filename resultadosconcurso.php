@@ -46,7 +46,7 @@ usort($res, 'sortByPun');
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" http-equiv=X-UA-Compatible>
-  <title> OchoCincoUno - Rusia 2018</title>
+  <title> OchoCincoUno - Copa América 2019</title>
   <link rel="icon" type="image/png" href="img/icono.png" />
   <link rel="stylesheet" href="css/estilo.css" />
   <link rel="stylesheet" href="css/estilo-movil.css" />

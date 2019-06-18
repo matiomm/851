@@ -339,13 +339,12 @@
       document.getElementById("cct").style.display = "none";
   }
   function mostrar_cct() {
-      console.log(document.getElementById("conchta").style.display);
       if (document.getElementById("conchta").style.display=="none"){
           document.getElementById("conchta").style.display = "block";
-          document.getElementById("bccct").innerText = "-";
+          document.getElementById("btn-show").src = "img/flecha-up-gris.png";
       } else {
           document.getElementById("conchta").style.display = "none";
-          document.getElementById("bccct").innerText = "+";
+          document.getElementById("btn-show").src = "img/flecha-down-gris.png";
       }
   }
 </script>
@@ -393,8 +392,9 @@
               <div id="cct">
                   <div class="titulos-modelos">
                       <h3 class="titulo-h3" style="text-align:center">
-                          <div class="row">
-                              <div id="bccct" class="col-1" onclick="mostrar_cct()" style="cursor:pointer;">-</div>
+                          <div class="row" style="position: relative;">
+                              <img id="btn-show" src="img/flecha-up-gris.png" onclick="mostrar_cct()" style="cursor:pointer; position: absolute; bottom: 1%; left: 1%; z-index: 1">
+                              <div class="col-1"></div>
                               <div class="col-10">Participa ¿Cuáles serán los resultados de Chile vs Tailandia y Chile vs Ecuador?</div>
                               <div class="col-1" onclick="cerrar_cct()" style="cursor: pointer;">X</div>
                           </div>
