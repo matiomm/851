@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" http-equiv=X-UA-Compatible>
-  <title> OchoCincoUno - Rusia 2018</title>
+  <title> OchoCincoUno - Copa América 2019</title>
   <link rel="icon" type="image/png" href="img/icono.png" />
   <link rel="stylesheet" href="css/estilo.css" />
   <link rel="stylesheet" href="css/estilo-movil.css" />
@@ -347,9 +347,7 @@
 </script>
 
 <body style="min-width:380px">
-<?php
-    include 'header.php'
-?>
+  <?php include 'header.php' ?>
 <main align="center">
     <div class="container">
         <br>
@@ -359,9 +357,11 @@
             </div>
             <div class="col-lg-12">
                 <h3>Instrucciones</h3>
-                Selecciona los resultados que crees que tendran los encuentros de la fase de grupo, junto con el campeón y subcampeón.<br>
+                ¿Quieres ganar una camiseta de la selección chilena?<br><br>
+
+                Participa en 851-Bet. El que sume más puntos se llevará una camiseta de la selección chilena. Selecciona los resultados que crees que tendran los encuentros de la fase de grupo, junto con el campeón y subcampeón.<br>
                 Obtendras 3 puntos por cada partido que aciertes, 10 puntos si aciertas al tercer lugar, 15 por el subcampeón y 20 por el campeón.<br>
-                No olvides llenar los datos de contacto, ya que los que consigan mas puntos, obtendran premios.
+                No olvides llenar los datos de contacto para informarte en caso de ganar.
             </div>
         </div>
         <br>
@@ -375,33 +375,8 @@
         <form action="proceso.php" method="post">
         <div class="row">
 
-            <div class="col-lg-4">
-                <h3>Jornada 1</h3>
-                <table style="width: 100%;">
-                    <thead>
-                        <th></th>
-                        <th>Local</th>
-                        <th>Empate</th>
-                        <th>Visita</th>
-                        <th></th>
-                    </thead>
-                    <tbody>
-                        <?php
-                            $locales = ["Brasil","Venezuela","Argentina","Paraguay","Uruguay","Japón"];
-                            $visitas = ["Bolivia","Perú","Colombia","Catar","Ecuador","Chile"];
-                            for ($i = 1; $i <= 6; $i++) {
-                                echo "<tr><td><img src=\"banderas/".$locales[$i-1]."30x20.png\" alt=\"".$locales[$i-1]."\" style='border:1px solid lightgray;'></td>";
-                                echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"l\"></td>";
-                                echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"e\" required></td>";
-                                echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"v\"></td>";
-                                echo "<td><img src=\"banderas/".$visitas[$i-1]."30x20.png\" alt=\"".$visitas[$i-1]."\" style='border:1px solid lightgray;'></td></tr>";
-                            }
-                        ?>
-                    </tbody>
-                </table>
-                </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <h3>Jornada 2</h3>
                 <table style="width: 100%;">
                     <thead>
@@ -427,7 +402,7 @@
                 </table>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <h3>Jornada 3</h3>
                 <table style="width: 100%;">
                     <thead>

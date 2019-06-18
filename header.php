@@ -5,14 +5,14 @@
             <h4 class="header_h4">PROBABILIDADES
                 <span style="color:#da1f2b">ACTUALIZADAS</span>
             </h4>
-            <h3 class="header_h3">16
+            <h3 class="header_h3">18
                 <span style="color:#da1f2b">/</span>06
                 <span style="color:#da1f2b">/</span>19
-                <span style="color:#da1f2b">20:45</span> hrs.</h3>
+                <span style="color:#da1f2b">10:53</span> hrs.</h3>
         </div>
         <div class="actualizado-movil" style="display:none">
             ACTUALIZADO
-            <span color=#da1f2b>16/06/19</span> 20:45
+            <span color=#da1f2b>18/06/19</span> 10:53
         </div>
         <div class="titulo">
             <h1 class="header_h1">OCHO

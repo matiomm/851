@@ -39,7 +39,7 @@
         //header("Location: concurso.php?errores=".implode($error, "<br>"));
         header("Location: concurso.php?errores=".$errores);
     }else{
-        newPar($db,$_POST["nombre"],$_POST["mail"],$_POST["tel"],$_POST["campeon"],$_POST["subcampeon"],$_POST["tercero"],$_POST["partido1"],$_POST["partido2"],$_POST["partido3"],$_POST["partido4"],$_POST["partido5"],$_POST["partido6"],$_POST["partido7"],$_POST["partido8"],$_POST["partido9"],$_POST["partido10"],$_POST["partido11"],$_POST["partido12"],$_POST["partido13"],$_POST["partido14"],$_POST["partido15"],$_POST["partido16"],$_POST["partido17"],$_POST["partido18"]);
+        newPar($db,$_POST["nombre"],$_POST["mail"],$_POST["tel"],$_POST["campeon"],$_POST["subcampeon"],$_POST["tercero"],"a","a","a","a","a","a",$_POST["partido7"],$_POST["partido8"],$_POST["partido9"],$_POST["partido10"],$_POST["partido11"],$_POST["partido12"],$_POST["partido13"],$_POST["partido14"],$_POST["partido15"],$_POST["partido16"],$_POST["partido17"],$_POST["partido18"]);
         $db->close();
         header("Location: resultadosconcurso.php");
     }

@@ -8,6 +8,8 @@
         "team1_win": 1.00,
         "team2_win": 0.00,
         "tie_prob": 0.00,
+        "team1_goal": 3,
+        "team2_goal": 0,
         "team1_home_color": "#a81717",
         "team1_away_color": "#ffffff",
         "team2_home_color": "#e9ebea",
@@ -15,7 +17,7 @@
         "slot": 1,
         "annotation": "some text here about the game and other smart things we would say"
     },
-    {
+        {
         "date": "2018-06-15",
         "time_est": "11:00",
         "team1": "VEN",
@@ -24,6 +26,8 @@
         "team1_win": 0.00,
         "team2_win": 0.00,
         "tie_prob": 1.00,
+        "team1_goal": 0,
+        "team2_goal": 0,
         "team1_home_color": "#771125",
         "team1_away_color": "#ffffff",
         "team2_home_color": "#006847",
@@ -31,7 +35,7 @@
         "slot": 1,
         "annotation": "some text here about the game and other smart things we would say"
     },
-    {
+        {
         "date": "2018-06-20",
         "time_est": "11:00",
         "team1": "ARG",
@@ -40,6 +44,8 @@
         "team1_win": 0.00,
         "team2_win": 1.00,
         "tie_prob": 0.00,
+        "team1_goal": 0,
+        "team2_goal": 2,
         "team1_home_color": "#00B140",
         "team1_away_color": "#FDDA24",
         "team2_home_color": "#fcc41a",
@@ -47,7 +53,7 @@
         "slot": 2,
         "annotation": "some text here about the game and other smart things we would say"
     },
-    {
+        {
         "date": "2018-06-20",
         "time_est": "14:00",
         "team1": "PAR",
@@ -56,6 +62,8 @@
         "team1_win": 0.00,
         "team2_win": 0.00,
         "tie_prob": 1.00,
+        "team1_goal": 2,
+        "team2_goal": 2,
         "team1_home_color": "#ffffff",
         "team1_away_color": "#be0000",
         "team2_home_color": "#D52B1E",
@@ -63,7 +71,7 @@
         "slot": 2,
         "annotation": "some text here about the game and other smart things we would say"
     },
-    {
+        {
         "date": "2018-06-14",
         "time_est": "11:00",
         "team1": "URU",
@@ -72,6 +80,8 @@
         "team1_win": 1.00,
         "team2_win": 0.00,
         "tie_prob": 0.00,
+        "team1_goal": 4,
+        "team2_goal": 0,
         "team1_home_color": "#a81717",
         "team1_away_color": "#ffffff",
         "team2_home_color": "#e9ebea",
@@ -79,15 +89,17 @@
         "slot": 1,
         "annotation": "some text here about the game and other smart things we would say"
     },
-    {
+        {
         "date": "2018-06-15",
         "time_est": "11:00",
         "team1": "JPN",
         "team2": "CHI",
         "group": "c",
-        "team1_win": 0.26,
-        "team2_win": 0.50,
-        "tie_prob": 0.24,
+        "team1_win": 0.00,
+        "team2_win": 1.00,
+        "tie_prob": 0.00,
+        "team1_goal": 0,
+        "team2_goal": 4,
         "team1_home_color": "#771125",
         "team1_away_color": "#ffffff",
         "team2_home_color": "#006847",
@@ -95,7 +107,7 @@
         "slot": 1,
         "annotation": "some text here about the game and other smart things we would say"
     },
-    {
+        {
         "date": "2018-06-19",
         "time_est": "11:00",
         "team1": "BOL",
@@ -104,6 +116,8 @@
         "team1_win": 0.10,
         "team2_win": 0.72,
         "tie_prob": 0.18,
+        "team1_goal": "-",
+        "team2_goal": "-",
         "team1_home_color": "#a81717",
         "team1_away_color": "#ffffff",
         "team2_home_color": "#771125",
@@ -111,7 +125,7 @@
         "slot": 2,
         "annotation": "some text here about the game and other smart things we would say"
     },
-    {
+        {
         "date": "2018-06-20",
         "time_est": "14:00",
         "team1": "BRA",
@@ -120,6 +134,8 @@
         "team1_win": 0.75,
         "team2_win": 0.07,
         "tie_prob": 0.18,
+        "team1_goal": "-",
+        "team2_goal": "-",
         "team1_home_color": "#006847",
         "team1_away_color": "#CE1126",
         "team2_home_color": "#e9ebea",
@@ -127,7 +143,7 @@
         "slot": 2,
         "annotation": "some text here about the game and other smart things we would say"
     },
-    {
+        {
         "date": "2017-06-25",
         "time_est": "11:00",
         "team1": "COL",
@@ -136,6 +152,8 @@
         "team1_win": 0.67,
         "team2_win": 0.13,
         "tie_prob": 0.20,
+        "team1_goal": "-",
+        "team2_goal": "-",
         "team1_home_color": "#ffffff",
         "team1_away_color": "#be0000",
         "team2_home_color": "#00B140",
@@ -143,7 +161,7 @@
         "slot": 3,
         "annotation": "some text here about the game and other smart things we would say"
     },
-    {
+        {
         "date": "2018-06-15",
         "time_est": "14:00",
         "team1": "ARG",
@@ -152,6 +170,8 @@
         "team1_win": 0.66,
         "team2_win": 0.13,
         "tie_prob": 0.21,
+        "team1_goal": "-",
+        "team2_goal": "-",
         "team1_home_color": "#00B140",
         "team1_away_color": "#FDDA24",
         "team2_home_color": "#D52B1E",
@@ -159,7 +179,7 @@
         "slot": 1,
         "annotation": "some text here about the game and other smart things we would say"
     },
-    {
+        {
         "date": "2018-06-19",
         "time_est": "11:00",
         "team1": "URU",
@@ -168,6 +188,8 @@
         "team1_win": 0.51,
         "team2_win": 0.24,
         "tie_prob": 0.25,
+        "team1_goal": "-",
+        "team2_goal": "-",
         "team1_home_color": "#a81717",
         "team1_away_color": "#ffffff",
         "team2_home_color": "#771125",
@@ -175,15 +197,17 @@
         "slot": 2,
         "annotation": "some text here about the game and other smart things we would say"
     },
-    {
+        {
         "date": "2018-06-20",
         "time_est": "14:00",
         "team1": "ECU",
         "team2": "CHI",
         "group": "c",
         "team1_win": 0.32,
-        "team2_win": 0.43,
+        "team2_win": 0.44,
         "tie_prob": 0.25,
+        "team1_goal": "-",
+        "team2_goal": "-",
         "team1_home_color": "#006847",
         "team1_away_color": "#CE1126",
         "team2_home_color": "#e9ebea",
@@ -191,7 +215,7 @@
         "slot": 2,
         "annotation": "some text here about the game and other smart things we would say"
     },
-    {
+        {
         "date": "2018-06-25",
         "time_est": "11:00",
         "team1": "BOL",
@@ -200,6 +224,8 @@
         "team1_win": 0.19,
         "team2_win": 0.58,
         "tie_prob": 0.22,
+        "team1_goal": "-",
+        "team2_goal": "-",
         "team1_home_color": "#006847",
         "team1_away_color": "#CE1126",
         "team2_home_color": "#a81717",
@@ -207,7 +233,7 @@
         "slot": 3,
         "annotation": "some text here about the game and other smart things we would say"
     },
-    {
+        {
         "date": "2018-06-25",
         "time_est": "11:00",
         "team1": "PER",
@@ -216,6 +242,8 @@
         "team1_win": 0.13,
         "team2_win": 0.60,
         "tie_prob": 0.27,
+        "team1_goal": "-",
+        "team2_goal": "-",
         "team1_home_color": "#e9ebea",
         "team1_away_color": "#262930",
         "team2_home_color": "#771125",
@@ -223,7 +251,7 @@
         "slot": 3,
         "annotation": "some text here about the game and other smart things we would say"
     },
-    {
+        {
         "date": "2018-06-15",
         "time_est": "11:00",
         "team1": "CAT",
@@ -232,6 +260,8 @@
         "team1_win": 0.11,
         "team2_win": 0.72,
         "tie_prob": 0.17,
+        "team1_goal": "-",
+        "team2_goal": "-",
         "team1_home_color": "#fcc41a",
         "team1_away_color": "#002B7F",
         "team2_home_color": "#ffffff",
@@ -239,7 +269,7 @@
         "slot": 1,
         "annotation": "some text here about the game and other smart things we would say"
     },
-    {
+        {
         "date": "2017-06-25",
         "time_est": "11:00",
         "team1": "COL",
@@ -248,6 +278,8 @@
         "team1_win": 0.61,
         "team2_win": 0.15,
         "tie_prob": 0.24,
+        "team1_goal": "-",
+        "team2_goal": "-",
         "team1_home_color": "#D52B1E",
         "team1_away_color": "#ffffff",
         "team2_home_color": "#fcc41a",
@@ -255,7 +287,7 @@
         "slot": 3,
         "annotation": "some text here about the game and other smart things we would say"
     },
-    {
+        {
         "date": "2018-06-25",
         "time_est": "11:00",
         "team1": "CHI",
@@ -264,6 +296,8 @@
         "team1_win": 0.34,
         "team2_win": 0.40,
         "tie_prob": 0.27,
+        "team1_goal": "-",
+        "team2_goal": "-",
         "team1_home_color": "#006847",
         "team1_away_color": "#CE1126",
         "team2_home_color": "#a81717",
@@ -271,7 +305,7 @@
         "slot": 3,
         "annotation": "some text here about the game and other smart things we would say"
     },
-    {
+        {
         "date": "2018-06-25",
         "time_est": "11:00",
         "team1": "ECU",
@@ -280,6 +314,8 @@
         "team1_win": 0.44,
         "team2_win": 0.32,
         "tie_prob": 0.25,
+        "team1_goal": "-",
+        "team2_goal": "-",
         "team1_home_color": "#e9ebea",
         "team1_away_color": "#262930",
         "team2_home_color": "#771125",
