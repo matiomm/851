@@ -1059,8 +1059,7 @@ include 'header.php';
                 ?>
 
             </div>
-
-
+        </div>
           <!-- RespaldoANFP/tabla-movil.html -->
 
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
@@ -1106,8 +1105,10 @@ include 'header.php';
 
 
           </script>
-        </div>
+
+
       </section>
+    </div>
   </main>
 
 <script type="text/javascript">
