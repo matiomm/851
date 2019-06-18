@@ -1,5 +1,5 @@
 <header class="header">
-    <img src="img/icono.png" class="header-icono">
+    <a href="index.php"><img src="img/icono.png" class="header-icono"></a>
     <div class="header mano">
         <div class="actualizado-desktop">
             <h4 class="header_h4">PROBABILIDADES
