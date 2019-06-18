@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" http-equiv=X-UA-Compatible>
-  <title> OchoCincoUno - Rusia 2018</title>
+  <title> OchoCincoUno - Copa América 2019</title>
   <link rel="icon" type="image/png" href="img/icono.png" />
   <link rel="stylesheet" href="css/estilo.css" />
   <link rel="stylesheet" href="css/estilo-movil.css" />
@@ -17,17 +17,17 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
-    <!-- Hotjar Tracking Code for http://www.851.cl -->
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:1358693,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
+  <!-- Hotjar Tracking Code for http://69.164.201.178/index.php -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:1367143,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101156269-1"></script>
   <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
@@ -338,9 +338,7 @@
 </script>
 
 <body style="min-width:380px">
-<?php
-include 'header.php';
-?>
+  <?php include 'header.php'; ?>
   <main class="main">
       <br>
     <div class="cont">
@@ -378,207 +376,15 @@ include 'header.php';
                 </div>
             </div>
         </section>
-
-
-
-        <div id="grupos" class="grupos" style="background-color:white">
-          <img src="img/banner-grupos.png" class="tabla img-tabla">
-
-
-          <div class="row">
-            <div class="col-lg-12" align="left" style="border-bottom: 2px solid black;">
-              <h1><b>Grupo A</b></h1>
-            </div>
-
-            <div class="col-lg-6">
-                  <svg class="chart" id="grupo1"></svg>
-            </div>
-            <div class="col-lg-6">
-              <div class="tabla-grupos" id="tabla-grupo1">
-                <div style="height: 70px; border-bottom: 2px solid #c7c7c7;">
-                  <span style="font-size: 30px;font-weight: bold" id="pt1"></span>
-                  <img align="right" id="bt1">
-                </div>
-                <table style="width: 100%">
-                  <thead style="border-bottom: 2px solid #c7c7c7;">
-                    <th width="23%">GANA</th>
-                    <th width="23%">EMPATA</th>
-                    <th width="23%">PIERDE</th>
-                    <th width="8%"></th>
-                    <th width="23%"></th>
-                  </thead>
-                  <tbody>
-                    <tr style="border-bottom: 2px solid #c7c7c7;">
-                      <td id="pg1"></td>
-                      <td id="pe1"></td>
-                      <td id="pp1"></td>
-                      <td style="font-weight: bold">vs.</td>
-                      <td><img id="bpp1"><div id="paisp1"></div></td>
-                    </tr>
-                    <tr style="border-bottom: 2px solid #c7c7c7;">
-                      <td id="pg2"></td>
-                      <td id="pe2"></td>
-                      <td id="pp2"></td>
-                      <td style="font-weight: bold">vs.</td>
-                      <td><img id="bpp2"><div id="paisp2"></div></td>
-                    </tr>
-                    <tr>
-                      <td id="pg3"></td>
-                      <td id="pe3"></td>
-                      <td id="pp3"></td>
-                      <td style="font-weight: bold">vs.</td>
-                      <td><img id="bpp3"><div id="paisp3"></div></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="row">
-            <div class="col-lg-12" align="left" style="border-bottom: 2px solid black;">
-              <h1><b>Grupo B</b></h1>
-            </div>
-
-            <div class="col-lg-6">
-              <svg class="chart" id="grupo2"></svg>
-            </div>
-            <div class="col-lg-6">
-              <div class="tabla-grupos" id="tabla-grupo2">
-                <div style="height: 70px; border-bottom: 2px solid #c7c7c7;">
-                  <span style="font-size: 30px;font-weight: bold" id="pt1"></span>
-                  <img align="right" id="bt1">
-                </div>
-                <table style="width: 100%">
-                  <thead style="border-bottom: 2px solid #c7c7c7;">
-                  <th width="23%">GANA</th>
-                  <th width="23%">EMPATA</th>
-                  <th width="23%">PIERDE</th>
-                  <th width="8%"></th>
-                  <th width="23%"></th>
-                  </thead>
-                  <tbody>
-                  <tr style="border-bottom: 2px solid #c7c7c7;">
-                    <td id="pg1"></td>
-                    <td id="pe1"></td>
-                    <td id="pp1"></td>
-                    <td style="font-weight: bold">vs.</td>
-                    <td><img id="bpp1"><div id="paisp1"></div></td>
-                  </tr>
-                  <tr style="border-bottom: 2px solid #c7c7c7;">
-                    <td id="pg2"></td>
-                    <td id="pe2"></td>
-                    <td id="pp2"></td>
-                    <td style="font-weight: bold">vs.</td>
-                    <td><img id="bpp2"><div id="paisp2"></div></td>
-                  </tr>
-                  <tr>
-                    <td id="pg3"></td>
-                    <td id="pe3"></td>
-                    <td id="pp3"></td>
-                    <td style="font-weight: bold">vs.</td>
-                    <td><img id="bpp3"><div id="paisp3"></div></td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="row">
-            <div class="col-lg-12" align="left" style="border-bottom: 2px solid black;">
-              <h1><b>Grupo C</b></h1>
-            </div>
-
-            <div class="col-lg-6">
-              <svg class="chart" id="grupo3"></svg>
-            </div>
-            <div class="col-lg-6">
-              <div class="tabla-grupos" id="tabla-grupo3">
-                <div style="height: 70px; border-bottom: 2px solid #c7c7c7;">
-                  <span style="font-size: 30px;font-weight: bold" id="pt1"></span>
-                  <img align="right" id="bt1">
-                </div>
-                <table style="width: 100%">
-                  <thead style="border-bottom: 2px solid #c7c7c7;">
-                  <th width="23%">GANA</th>
-                  <th width="23%">EMPATA</th>
-                  <th width="23%">PIERDE</th>
-                  <th width="8%"></th>
-                  <th width="23%"></th>
-                  </thead>
-                  <tbody>
-                  <tr style="border-bottom: 2px solid #c7c7c7;">
-                    <td id="pg1"></td>
-                    <td id="pe1"></td>
-                    <td id="pp1"></td>
-                    <td style="font-weight: bold">vs.</td>
-                    <td><img id="bpp1"><div id="paisp1"></div></td>
-                  </tr>
-                  <tr style="border-bottom: 2px solid #c7c7c7;">
-                    <td id="pg2"></td>
-                    <td id="pe2"></td>
-                    <td id="pp2"></td>
-                    <td style="font-weight: bold">vs.</td>
-                    <td><img id="bpp2"><div id="paisp2"></div></td>
-                  </tr>
-                  <tr>
-                    <td id="pg3"></td>
-                    <td id="pe3"></td>
-                    <td id="pp3"></td>
-                    <td style="font-weight: bold">vs.</td>
-                    <td><img id="bpp3"><div id="paisp3"></div></td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-        <div id="eliminatoria" class="eliminatoria" style="display:none">
-          <img src="img/banner-eliminacion.png" class="tabla img-tabla">
-          <div class="contacto">
-            <div class="titulos-modelos">
-              <ul>
-                <li>Cuartos</li>
-                <li>Semis</li>
-                <li>Final</li>
-                <li>Campeón</li>
-              </ul>
-            </div>
-           <!--<div class="cursor" style="text-align:center">
-              Pasa el cursor sobre el nombre de las selecciones para ver sus probabilidades.
-            </div>-->
-            <div class="abajo">
-              <div class="bracket" aling="center">
-                  <div class="divchart"><img src="img/bracket.PNG"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="tabla-movil" class="tabla-movil" style="display:none">
-          <img src="img/banner-rusia.png" class="tabla img-tabla">
-        </div>
-        <div id="probabilidades" class="probabilidades" style="display:none">
-          <img src="img/banner-rusia.png" class="tabla img-tabla">
-          <div class="row">
-              <div class="col-lg-12" id="tabla-probabilidades">
-              </div>
-          </div>
-        </div>
-        <div id="partidos" class="partidos" style="display:none">
+        <div id="partidos" class="partidos">
           <img src="img/banner-partidos.png" class="tabla img-tabla">
 
 
-          <div class="titulos-modelos">
+          <!--<div class="titulos-modelos">
             <h3 class="titulo-h3" style="text-align:center"><a>Participa ¿Cuál será el resultado de Chile vs Japón?</a></h3>
           </div>
-
-          <form method="post" action="proceso2.php" target="_blank">
+        -->
+          <!--<form method="post" action="proceso2.php" target="_blank">
           <div class="form-row" align="center" style="margin-top: 10px;">
             <div class="col-lg-3">
               <table>
@@ -618,7 +424,7 @@ include 'header.php';
               <input type="image" name="submit" src="img/Btn_enviar.jpg" width="120px" alt="Submit">
             </div>
           </div>
-          </form>
+        </form>-->
 
           <!--
                     <div class="container-real-time-graph" width="90%" height="100%">
@@ -1107,6 +913,192 @@ include 'header.php';
 
           </script>
         </div>
+        <div id="grupos" class="grupos" style="background-color:white">
+          <img src="img/banner-grupos.png" class="tabla img-tabla">
+
+
+          <div class="row">
+            <div class="col-lg-12" align="left" style="border-bottom: 2px solid black;">
+              <h1><b>Grupo A</b></h1>
+            </div>
+
+            <div class="col-lg-6">
+                  <svg class="chart" id="grupo1"></svg>
+            </div>
+            <div class="col-lg-6">
+              <div class="tabla-grupos" id="tabla-grupo1">
+                <div style="height: 70px; border-bottom: 2px solid #c7c7c7;">
+                  <span style="font-size: 30px;font-weight: bold" id="pt1"></span>
+                  <img align="right" id="bt1">
+                </div>
+                <table style="width: 100%">
+                  <thead style="border-bottom: 2px solid #c7c7c7;">
+                    <th width="23%">GANA</th>
+                    <th width="23%">EMPATA</th>
+                    <th width="23%">PIERDE</th>
+                    <th width="8%"></th>
+                    <th width="23%"></th>
+                  </thead>
+                  <tbody>
+                    <tr style="border-bottom: 2px solid #c7c7c7;">
+                      <td id="pg1"></td>
+                      <td id="pe1"></td>
+                      <td id="pp1"></td>
+                      <td style="font-weight: bold">vs.</td>
+                      <td><img id="bpp1"><div id="paisp1"></div></td>
+                    </tr>
+                    <tr style="border-bottom: 2px solid #c7c7c7;">
+                      <td id="pg2"></td>
+                      <td id="pe2"></td>
+                      <td id="pp2"></td>
+                      <td style="font-weight: bold">vs.</td>
+                      <td><img id="bpp2"><div id="paisp2"></div></td>
+                    </tr>
+                    <tr>
+                      <td id="pg3"></td>
+                      <td id="pe3"></td>
+                      <td id="pp3"></td>
+                      <td style="font-weight: bold">vs.</td>
+                      <td><img id="bpp3"><div id="paisp3"></div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12" align="left" style="border-bottom: 2px solid black;">
+              <h1><b>Grupo B</b></h1>
+            </div>
+
+            <div class="col-lg-6">
+              <svg class="chart" id="grupo2"></svg>
+            </div>
+            <div class="col-lg-6">
+              <div class="tabla-grupos" id="tabla-grupo2">
+                <div style="height: 70px; border-bottom: 2px solid #c7c7c7;">
+                  <span style="font-size: 30px;font-weight: bold" id="pt1"></span>
+                  <img align="right" id="bt1">
+                </div>
+                <table style="width: 100%">
+                  <thead style="border-bottom: 2px solid #c7c7c7;">
+                  <th width="23%">GANA</th>
+                  <th width="23%">EMPATA</th>
+                  <th width="23%">PIERDE</th>
+                  <th width="8%"></th>
+                  <th width="23%"></th>
+                  </thead>
+                  <tbody>
+                  <tr style="border-bottom: 2px solid #c7c7c7;">
+                    <td id="pg1"></td>
+                    <td id="pe1"></td>
+                    <td id="pp1"></td>
+                    <td style="font-weight: bold">vs.</td>
+                    <td><img id="bpp1"><div id="paisp1"></div></td>
+                  </tr>
+                  <tr style="border-bottom: 2px solid #c7c7c7;">
+                    <td id="pg2"></td>
+                    <td id="pe2"></td>
+                    <td id="pp2"></td>
+                    <td style="font-weight: bold">vs.</td>
+                    <td><img id="bpp2"><div id="paisp2"></div></td>
+                  </tr>
+                  <tr>
+                    <td id="pg3"></td>
+                    <td id="pe3"></td>
+                    <td id="pp3"></td>
+                    <td style="font-weight: bold">vs.</td>
+                    <td><img id="bpp3"><div id="paisp3"></div></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12" align="left" style="border-bottom: 2px solid black;">
+              <h1><b>Grupo C</b></h1>
+            </div>
+
+            <div class="col-lg-6">
+              <svg class="chart" id="grupo3"></svg>
+            </div>
+            <div class="col-lg-6">
+              <div class="tabla-grupos" id="tabla-grupo3">
+                <div style="height: 70px; border-bottom: 2px solid #c7c7c7;">
+                  <span style="font-size: 30px;font-weight: bold" id="pt1"></span>
+                  <img align="right" id="bt1">
+                </div>
+                <table style="width: 100%">
+                  <thead style="border-bottom: 2px solid #c7c7c7;">
+                  <th width="23%">GANA</th>
+                  <th width="23%">EMPATA</th>
+                  <th width="23%">PIERDE</th>
+                  <th width="8%"></th>
+                  <th width="23%"></th>
+                  </thead>
+                  <tbody>
+                  <tr style="border-bottom: 2px solid #c7c7c7;">
+                    <td id="pg1"></td>
+                    <td id="pe1"></td>
+                    <td id="pp1"></td>
+                    <td style="font-weight: bold">vs.</td>
+                    <td><img id="bpp1"><div id="paisp1"></div></td>
+                  </tr>
+                  <tr style="border-bottom: 2px solid #c7c7c7;">
+                    <td id="pg2"></td>
+                    <td id="pe2"></td>
+                    <td id="pp2"></td>
+                    <td style="font-weight: bold">vs.</td>
+                    <td><img id="bpp2"><div id="paisp2"></div></td>
+                  </tr>
+                  <tr>
+                    <td id="pg3"></td>
+                    <td id="pe3"></td>
+                    <td id="pp3"></td>
+                    <td style="font-weight: bold">vs.</td>
+                    <td><img id="bpp3"><div id="paisp3"></div></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div id="eliminatoria" class="eliminatoria" style="display:none">
+          <img src="img/banner-eliminacion.png" class="tabla img-tabla">
+          <div class="contacto">
+            <div class="titulos-modelos">
+              <ul>
+                <li>Cuartos</li>
+                <li>Semis</li>
+                <li>Final</li>
+                <li>Campeón</li>
+              </ul>
+            </div>
+           <!--<div class="cursor" style="text-align:center">
+              Pasa el cursor sobre el nombre de las selecciones para ver sus probabilidades.
+            </div>-->
+            <div class="abajo">
+              <div class="bracket" aling="center">
+                  <div class="divchart"><img src="img/bracket.PNG"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="probabilidades" class="probabilidades" style="display:none">
+          <img src="img/banner-rusia.png" class="tabla img-tabla">
+          <div class="row">
+              <div class="col-lg-12" id="tabla-probabilidades">
+              </div>
+          </div>
+        </div>
       </section>
   </main>
 
@@ -1127,6 +1119,8 @@ include 'header.php';
             });
 
     function visGrupos(data,datap) {
+      console.log(data);
+      console.log(datap);
         var myFormatters = d3.locale({
             "decimal": ",",
             "thousands": ".",
@@ -1354,12 +1348,12 @@ include 'header.php';
           if (i<6){
               d3.select("#j1").select("#p"+(i%6)).select("#t1").text(" "+data[datap[i]["team1"]].country);
               d3.select("#j1").select("#p"+(i%6)).select("#bt1").attr("src","banderas/"+data[datap[i]["team1"]].country+"30x20.png");
-              d3.select("#j1").select("#p"+(i%6)).select("#gt1").text("0");
+              d3.select("#j1").select("#p"+(i%6)).select("#gt1").text(datap[i]["team1_goal"]);
               d3.select("#j1").select("#p"+(i%6)).select("#pt1").text((Math.round( (datap[i]["team1_win"]*100) * 10 ) / 10)+"%");
 
               d3.select("#j1").select("#p"+(i%6)).select("#t2").text(" "+data[datap[i]["team2"]].country);
               d3.select("#j1").select("#p"+(i%6)).select("#bt2").attr("src","banderas/"+data[datap[i]["team2"]].country+"30x20.png");
-              d3.select("#j1").select("#p"+(i%6)).select("#gt2").text("0");
+              d3.select("#j1").select("#p"+(i%6)).select("#gt2").text(datap[i]["team2_goal"]);
               d3.select("#j1").select("#p"+(i%6)).select("#pt2").text((Math.round( (datap[i]["team2_win"]*100) * 10 ) / 10)+"%");
 
               d3.select("#j1").select("#p"+(i%6)).select(".fecha-partido").text(formatofecha(new Date(Date.parse(datap[i].date))));
@@ -1367,12 +1361,12 @@ include 'header.php';
           } else if (i<12){
               d3.select("#j2").select("#p"+(i%6)).select("#t1").text(" "+data[datap[i]["team1"]].country);
               d3.select("#j2").select("#p"+(i%6)).select("#bt1").attr("src","banderas/"+data[datap[i]["team1"]].country+"30x20.png");
-              d3.select("#j2").select("#p"+(i%6)).select("#gt1").text("0");
+              d3.select("#j2").select("#p"+(i%6)).select("#gt1").text(datap[i]["team1_goal"]);
               d3.select("#j2").select("#p"+(i%6)).select("#pt1").text((Math.round( (datap[i]["team1_win"]*100) * 10 ) / 10)+"%");
 
               d3.select("#j2").select("#p"+(i%6)).select("#t2").text(" "+data[datap[i]["team2"]].country);
               d3.select("#j2").select("#p"+(i%6)).select("#bt2").attr("src","banderas/"+data[datap[i]["team2"]].country+"30x20.png");
-              d3.select("#j2").select("#p"+(i%6)).select("#gt2").text("0");
+              d3.select("#j2").select("#p"+(i%6)).select("#gt2").text(datap[i]["team2_goal"]);
               d3.select("#j2").select("#p"+(i%6)).select("#pt2").text((Math.round( (datap[i]["team2_win"]*100) * 10 ) / 10)+"%");
 
               d3.select("#j2").select("#p"+(i%6)).select(".fecha-partido").text(formatofecha(new Date(Date.parse(datap[i].date))));
@@ -1380,12 +1374,12 @@ include 'header.php';
           } else {
               d3.select("#j3").select("#p"+(i%6)).select("#t1").text(" "+data[datap[i]["team1"]].country);
               d3.select("#j3").select("#p"+(i%6)).select("#bt1").attr("src","banderas/"+data[datap[i]["team1"]].country+"30x20.png");
-              d3.select("#j3").select("#p"+(i%6)).select("#gt1").text("0");
+              d3.select("#j3").select("#p"+(i%6)).select("#gt1").text(datap[i]["team1_goal"]);
               d3.select("#j3").select("#p"+(i%6)).select("#pt1").text((Math.round( (datap[i]["team1_win"]*100) * 10 ) / 10)+"%");
 
               d3.select("#j3").select("#p"+(i%6)).select("#t2").text(" "+data[datap[i]["team2"]].country);
               d3.select("#j3").select("#p"+(i%6)).select("#bt2").attr("src","banderas/"+data[datap[i]["team2"]].country+"30x20.png");
-              d3.select("#j3").select("#p"+(i%6)).select("#gt2").text("0");
+              d3.select("#j3").select("#p"+(i%6)).select("#gt2").text(datap[i]["team2_goal"]);
               d3.select("#j3").select("#p"+(i%6)).select("#pt2").text((Math.round( (datap[i]["team2_win"]*100) * 10 ) / 10)+"%");
 
               d3.select("#j3").select("#p"+(i%6)).select(".fecha-partido").text(formatofecha(new Date(Date.parse(datap[i].date))));
