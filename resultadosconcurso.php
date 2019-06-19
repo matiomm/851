@@ -400,7 +400,7 @@ usort($res, 'sortByPun');
         </div>
         <div class="row" style="margin: 10px">
             <div class="col-lg-12">
-                <img src="img/btn-concurso.jpg">
+                <a href="concurso.php"><img src="img/btn-concurso.jpg"></a>
             </div>
         </div>
         <br>
