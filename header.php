@@ -1,18 +1,18 @@
 <header class="header">
-    <a href="index.php"><img src="img/icono.png" class="header-icono"></a>
+    <img src="img/icono.png" class="header-icono">
     <div class="header mano">
         <div class="actualizado-desktop">
             <h4 class="header_h4">PROBABILIDADES
                 <span style="color:#da1f2b">ACTUALIZADAS</span>
             </h4>
-            <h3 class="header_h3">18
+            <h3 class="header_h3">19
                 <span style="color:#da1f2b">/</span>06
                 <span style="color:#da1f2b">/</span>19
-                <span style="color:#da1f2b">10:53</span> hrs.</h3>
+                <span style="color:#da1f2b">12:15</span> hrs.</h3>
         </div>
         <div class="actualizado-movil" style="display:none">
             ACTUALIZADO
-            <span color=#da1f2b>18/06/19</span> 10:53
+            <span color=#da1f2b>19/06/19</span> 12:15
         </div>
         <div class="titulo">
             <h1 class="header_h1">OCHO
