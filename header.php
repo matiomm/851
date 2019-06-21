@@ -8,11 +8,11 @@
             <h3 class="header_h3">19
                 <span style="color:#da1f2b">/</span>06
                 <span style="color:#da1f2b">/</span>19
-                <span style="color:#da1f2b">12:15</span> hrs.</h3>
+                <span style="color:#da1f2b">22:44</span> hrs.</h3>
         </div>
         <div class="actualizado-movil" style="display:none">
             ACTUALIZADO
-            <span color=#da1f2b>19/06/19</span> 12:15
+            <span color=#da1f2b>19/06/19</span> 22:44
         </div>
         <div class="titulo">
             <h1 class="header_h1">OCHO

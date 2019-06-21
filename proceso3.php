@@ -57,7 +57,7 @@
         //header("Location: concurso.php?errores=".implode($error, "<br>"));
         header("Location: participacion.php?errores=".$errores);
     }else{
-        newPar($db,$_POST["nombre"],$_POST["mail"],$_POST["tel"],$_POST["gc"],$_POST["gt"]);
+        //newPar($db,$_POST["nombre"],$_POST["mail"],$_POST["tel"],$_POST["gc"],$_POST["gt"]);
         newPar2($db,$_POST["nombre"],$_POST["mail"],$_POST["tel"],$_POST["gc2"],$_POST["ge"]);
         $db->close();
         header("Location: participacion.php");
