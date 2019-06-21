@@ -1,6 +1,6 @@
 <!Doctype html>
 <?php
-$resultadospartidos = ["l","e","v","e","l","v","v","e"];
+$resultadospartidos = ["l","e","v","e","l","v","v","e","l","e"];
 $campeon = "";
 $subcampeon = "";
 $tercero = "";
