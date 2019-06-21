@@ -398,22 +398,13 @@ usort($res, 'sortByPun');
             </div>
             <div class="col-lg-2"></div>
         </div>
-        <div class="row" style="margin: 10px">
-            <div class="col-lg-12">
-                <a href="concurso.php"><img src="img/btn-concurso.jpg"></a>
-            </div>
-        </div>
         <br>
         <div class="row" align="center">
-            <div class="col-4">
-                <b>Posición</b>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <img src="img/cabecera-concurso-tabla.png" width="100%">
             </div>
-            <div class="col-4">
-                <b>Nombre</b>
-            </div>
-            <div class="col-4">
-                <b>Puntos</b>
-            </div>
+            <div class="col-lg-2"></div>
             <?php
                 $ant = 0;
                 $igu = 0;
@@ -425,13 +416,15 @@ usort($res, 'sortByPun');
                             $igu=0;
                         }
                     }
-                    echo "<div class=\"col-4\">".($i-$igu)."°</div>";
-                    echo "<div class=\"col-4\">".$res[$i-1]["nom"]."</div>";
+                    echo '<div class="col-lg-2"></div>';
+                    echo '<div class="col-lg-8" style="display: flex"><div style=\'width: 25%\'>'.($i-$igu)."°</div>";
+                    echo "<div style='width: 50%'>".$res[$i-1]["nom"]."</div>";
                     if ($res[$i-1]["pun"]==1){
-                        echo "<div class=\"col-4\">".$res[$i-1]["pun"]." punto</div>";
+                        echo "<div style='width: 25%'>".$res[$i-1]["pun"]." punto</div>";
                     } else {
-                        echo "<div class=\"col-4\">" . $res[$i - 1]["pun"] . " puntos</div>";
+                        echo "<div style='width: 25%''>" . $res[$i - 1]["pun"] . " puntos</div></div>";
                     }
+                    echo '<div class="col-lg-2"></div>';
                     $ant=$res[$i - 1]["pun"];
                 }
             ?>

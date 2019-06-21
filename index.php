@@ -393,7 +393,7 @@
                   <div class="row no-gutters" id="titulo-concurso">
                       <div class="col-1" style="text-align: left;padding-right: 10px"><img id="btn-show" src="img/flecha-up-gris.png" onclick="mostrar_cct()" style="max-width: 80%;cursor:pointer;"></div>
                       <div class="col-10">Participa ¿Cuáles serán los resultados de Chile vs Tailandia y Chile vs Ecuador?</div>
-                      <div class="col-1" onclick="cerrar_cct()" style="cursor: pointer; text-align: right;">X</div>
+                      <div class="col-1" style="text-align: right;padding-left: 10px"><img id="btn-show" src="img/cerrar.png" onclick="cerrar_cct()" style="max-width: 80%;cursor:pointer;"></div>
                   </div>
                   <form method="post" action="proceso3.php" target="_blank" id="conchta">
                   <div class="form-row" align="center" style="margin-top: 10px;">
