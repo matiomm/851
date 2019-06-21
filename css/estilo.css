@@ -397,3 +397,13 @@ td {
   text-align: center;
   padding: 10px;
 }
+
+#titulo-bracket{
+  background-color: #323C3D;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

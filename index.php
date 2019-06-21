@@ -397,7 +397,7 @@
                   </div>
                   <form method="post" action="proceso3.php" target="_blank" id="conchta">
                   <div class="form-row" align="center" style="margin-top: 10px;">
-                      <div class="col-lg-6">
+                      <!--<div class="col-lg-6">
                           <table>
                               <tbody>
                               <tr>
@@ -409,8 +409,8 @@
                               </tr>
                               </tbody>
                           </table>
-                      </div>
-                      <div class="col-lg-6">
+                      </div>-->
+                      <div class="col-lg-12">
                           <table>
                               <tbody>
                               <tr>
