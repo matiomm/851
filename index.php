@@ -388,7 +388,7 @@
                 </div>
             </div>
         </section>
-          <section class="concurso">
+          <!--<section class="concurso">
               <div id="cct">
                   <div class="row no-gutters" id="titulo-concurso">
                       <div class="col-1" style="text-align: left;padding-right: 10px"><img id="btn-show" src="img/flecha-up-gris.png" onclick="mostrar_cct()" style="max-width: 80%;cursor:pointer;"></div>
@@ -397,7 +397,7 @@
                   </div>
                   <form method="post" action="proceso3.php" target="_blank" id="conchta">
                   <div class="form-row" align="center" style="margin-top: 10px;">
-                      <!--<div class="col-lg-6">
+                      <div class="col-lg-6">
                           <table>
                               <tbody>
                               <tr>
@@ -409,7 +409,7 @@
                               </tr>
                               </tbody>
                           </table>
-                      </div>-->
+                      </div>
                       <div class="col-lg-12">
                           <table>
                               <tbody>
@@ -451,7 +451,7 @@
                   </div>
               </form>
               </div>
-          </section>
+          </section>-->
         <div id="partidos" class="partidos" style="display: none">
           <img src="img/banner-partidos.png" class="tabla img-tabla">
 

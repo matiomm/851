@@ -392,8 +392,8 @@
                     $visitas = ["Perú","Venezuela","Catar","Paraguay","Japón","Chile"];
                     for ($i = 7; $i <= 12; $i++) {
                         echo "<tr><td><img src=\"banderas/".$locales[$i-7]."30x20.png\" alt=\"".$locales[$i-7]."\" style='border:1px solid lightgray;'></td>";
-                        if($i<=11){
-				            echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"l\" disabled></td>";
+                        if($i<=12){
+				echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"l\" disabled></td>";
                         	echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"e\" disabled></td>";
                         	echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"v\" disabled></td>";
 			            }else{
@@ -424,10 +424,17 @@
                     $visitas = ["Venezuela","Brasil","Argentina","Paraguay","Uruguay","Japón"];
                     for ($i = 13; $i <= 18; $i++) {
                         echo "<tr><td><img src=\"banderas/".$locales[$i-13]."30x20.png\" alt=\"".$locales[$i-13]."\" style='border:1px solid lightgray;'></td>";
-                        echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"l\"></td>";
-                        echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"e\" required></td>";
-                        echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"v\"></td>";
-                        echo "<td><img src=\"banderas/".$visitas[$i-13]."30x20.png\" alt=\"".$visitas[$i-13]."\" style='border:1px solid lightgray;'></td></tr>";
+                        if($i<=14){
+				echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"l\" disabled></td>";
+                        	echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"e\" disabled></td>";
+                        	echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"v\" disabled></td>";
+			            }else{
+				            echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"l\"></td>";
+                        	echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"e\" required></td>";
+                        	echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"v\"></td>";
+			            }
+
+			echo "<td><img src=\"banderas/".$visitas[$i-13]."30x20.png\" alt=\"".$visitas[$i-13]."\" style='border:1px solid lightgray;'></td></tr>";
                     }
                     ?>
                     </tbody>
