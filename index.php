@@ -1425,7 +1425,7 @@
         var alto2 = 1.12*ancho2;
         viz2.attr("height",alto2);
 
-        var clasif = ["1° A","3° B/C","2° A","2° B","1° B","2° C","1° C","3° A/B"];
+        var clasif = ["1° A","3° B/C","2° A","2° B","1° B","2° C","1° C","3° A"];
 
         var pacla = {};
         for (i in data){
