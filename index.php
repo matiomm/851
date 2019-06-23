@@ -1166,16 +1166,16 @@
       datos = {"Grupo A": grupoA, "Grupo B": grupoB, "Grupo C": grupoC};
       dba = datos["Grupo A"];
       dba.sort(function (a,b) {
-        return b["win_group"]-a["win_group"];
+        return (30*b["win_group"] + 20*b["second_group"] + 10 * b["best_third"] + b["no_quarter"])-(30*a["win_group"] + 20*a["second_group"] + 10 * a["best_third"] + a["no_quarter"]);
       });
       dbb = datos["Grupo B"];
       dbb.sort(function (a,b) {
-        return b["win_group"]-a["win_group"];
+          return (30*b["win_group"] + 20*b["second_group"] + 10 * b["best_third"] + b["no_quarter"])-(30*a["win_group"] + 20*a["second_group"] + 10 * a["best_third"] + a["no_quarter"]);
       });
 
       dbc = datos["Grupo C"];
       dbc.sort(function (a,b) {
-        return b["win_group"]-a["win_group"];
+          return (30*b["win_group"] + 20*b["second_group"] + 10 * b["best_third"] + b["no_quarter"])-(30*a["win_group"] + 20*a["second_group"] + 10 * a["best_third"] + a["no_quarter"]);
       });
 
       dlp = [];
