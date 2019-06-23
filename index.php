@@ -1463,7 +1463,7 @@
         var hsep = (1-(8*hb))/7;
 
         var borde = 0.01;
-        var bordeh = 0.01;
+        var bordeh = 0.05;
 
         xbra = [];
         ybra = [];
