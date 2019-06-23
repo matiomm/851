@@ -1101,27 +1101,20 @@
           </div>
 
         </div>
-        <div id="eliminatoria" class="eliminatoria" style="display:none">
-          <img src="img/banner-eliminacion.png" class="tabla img-tabla">
-          <div class="contacto">
-            <div class="titulos-modelos">
-              <ul>
-                <li>Cuartos</li>
-                <li>Semis</li>
-                <li>Final</li>
-                <li>Campeón</li>
-              </ul>
-            </div>
-           <!--<div class="cursor" style="text-align:center">
-              Pasa el cursor sobre el nombre de las selecciones para ver sus probabilidades.
-            </div>-->
-            <div class="abajo">
-              <div class="bracket" aling="center">
-                  <div class="divchart"><img src="img/bracket.PNG"></div>
+          <div id="eliminatoria" class="eliminatoria">
+              <img src="img/banner-eliminacion.png" class="tabla img-tabla">
+
+              <div class="row" id="titulo-bracket">
+                  <div class="col-3">Cuartos</div>
+                  <div class="col-3">Semis</div>
+                  <div class="col-3">Final</div>
+                  <div class="col-3">Campeón</div>
               </div>
-            </div>
+              <div class="row no-gutters">
+                  <div class="col-lg-12" id="divbracket" aling="center">
+                  </div>
+              </div>
           </div>
-        </div>
         <div id="probabilidades" class="probabilidades" style="display:none">
           <img src="img/banner-rusia.png" class="tabla img-tabla">
           <div class="row">
@@ -1438,6 +1431,155 @@
 
 
       d3.selectAll(".nompais").style("text-align","left");
+
+        ////////////////////////         BRACKET      /////////////////////////
+        viz2 = d3.select("#divbracket").append("svg").attr("id","bracket").attr("width","100%");
+        var ancho2 = viz2.style("width").substring(0, viz2.style("width").length - 2);
+        var alto2 = 1.12*ancho2;
+        viz2.attr("height",alto2);
+
+        var clasif = ["1° A","3° B/C","2° A","2° B","1° B","2° C","1° C","3° A/B"];
+
+        var pacla = {};
+        for (i in data){
+            var grupo = data[i]["group"];
+            var GRUPO = grupo.toUpperCase();
+            if(data[i]["win_group"]==1){
+                console.log(GRUPO);
+                pacla["1° "+GRUPO]= data[i];
+            }else if(data[i]["second_group"]==1){
+                pacla["2° "+GRUPO]=data[i];
+            }else if(data[i]["best_third"]==1){
+                pacla["3° "+GRUPO]=data[i];
+            }
+        }
+
+        console.log(pacla);
+
+        var ab = 0.15;
+        var sep = (1-(4*ab))/3;
+
+        var hb = ab/3;
+        var hsep = (1-(8*hb))/7;
+
+        var borde = 0.01;
+        var bordeh = 0.01;
+
+        xbra = [];
+        ybra = [];
+        for (i = 0; i<4; i++){
+            for (j= 0; j<8;j++){
+                x = (borde*ancho2) + i*(1-(2*borde))*ancho2*ab + i*(1-(2*borde))*ancho2*sep;
+                y = (bordeh*alto2) + (j + (Math.pow(2,i)-1)/2)*(1-(2*bordeh))*alto2*hb + (j + (Math.pow(2,i)-1)/2)*(1-(2*bordeh))*alto2*hsep;
+                h = ((1-(2*bordeh))*alto2*hb);
+                w = ((1-(2*borde))*ancho2*ab);
+                ybra.push(y+h/2);
+                j=j+(Math.pow(2,i)-1);
+            }
+            xbra.push(x);
+            xbra.push(x+w/3);
+            xbra.push(x+w);
+        }
+        xbra.shift();
+        xbra.shift();
+        xbra.pop();
+
+        lineabra = d3.svg.line()
+            .x((d) => xbra[d])
+            .y((d, i) => ybra[asd[i]]);
+        for (n=0;n<14;n++){
+            if (n<8){
+                indi = [0,1,2];
+            } else if(n<12){
+                indi = [3,4,5];
+            } else {
+                indi = [6,7,8];
+            }
+            var color = "black";
+            var opa = 1;
+            if (n%2==0){
+                var ajuste=-10;
+            } else{
+                var ajuste=20;
+            }
+            if (pacla[clasif[n]]){
+                color = pacla[clasif[n]]["color_home"];
+                opa = pacla[clasif[n]]["semi"];
+                d3.select("#bracket")
+                    .append("text")
+                    .attr("x", (xbra[indi[1]]+xbra[indi[0]])/2)
+                    .attr("y", ybra[n]+ajuste)
+                    .style("fill","black")
+                    .style("font-weight","bold")
+                    .style("text-anchor", "start")
+                    .style("font-size", 20+"px")
+                    .style("vertical-align", "middle")
+                    .text((Math.round( (pacla[clasif[n]]["semi"]*100) * 10 ) / 10)+"%");
+            }
+            aux = parseInt(n/2);
+            asd = [ n, n, aux+8];
+            d3.select("#bracket")
+                .append("path")
+                .attr("d", lineabra(indi))
+                .style("stroke-width", "7px")
+                .style("fill", "none")
+                .style("opacity",opa)
+                .style("stroke", color);
+        }
+
+        contador=0;
+        for (i = 0; i<4; i++){
+            for (j= 0; j<8;j++) {
+                x = (borde * ancho2) + i * (1 - (2 * borde)) * ancho2 * ab + i * (1 - (2 * borde)) * ancho2 * sep;
+                y = (bordeh * alto2) + (j + (Math.pow(2, i) - 1) / 2) * (1 - (2 * bordeh)) * alto2 * hb + (j + (Math.pow(2, i) - 1) / 2) * (1 - (2 * bordeh)) * alto2 * hsep;
+                h = ((1 - (2 * bordeh)) * alto2 * hb);
+                w = ((1 - (2 * borde)) * ancho2 * ab);
+                /*d3.select("#bracket")
+                    .append("rect")
+                    .attr("x", x + "px")
+                    .attr("y", y + "px")
+                    .attr("height", h + "px")
+                    .attr("width", w + "px");*/
+                d3.select("#bracket")
+                    .append('svg:image')
+                    .attr({
+                        'xlink:href': 'img/bracket.png',  // can also add svg file here
+                        x: x,
+                        y: y,
+                        height: h,
+                        width: w
+                    });
+                var imagen = 'img/logo_CA30x30.png';
+                var label = clasif[contador];
+                if (pacla[clasif[contador]]){
+                    imagen = 'banderas/'+pacla[clasif[contador]].country+'300x200.png';
+                    label = pacla[clasif[contador]]["country_id"];
+                }
+                d3.select("#bracket")
+                    .append('svg:image')
+                    .attr({
+                        'xlink:href': imagen,  // can also add svg file here
+                        x: x + 0.05 * w,
+                        y: y + 0.25 * h,
+                        height: h * 0.5
+                    });
+
+                d3.select("#bracket")
+                    .append("text")
+                    .attr("x", x+w/2)
+                    .attr("y", y+h/2+h/6)
+                    .style("fill","white")
+                    .style("text-anchor", "start")
+                    .style("font-size", h/2+"px")
+                    .style("vertical-align", "middle")
+                    .text(label);
+                contador++;
+                j=j+(Math.pow(2,i)-1);
+            }
+        }
+        d3.select("#eliminatoria").style("display","none");
+        /////////////////////////////////////////////////////////
+
 
     }
     d3.selectAll("text").style("font-family","MyriadPro")
