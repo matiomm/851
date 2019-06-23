@@ -1129,8 +1129,14 @@
 <script type="text/javascript">
   window.onload = function () {
     console.log("wena compare");
-      var viz1 = d3.select("#grupo1");
-      var ancho = viz1.style("width").substring(0, viz1.style("width").length - 2) - 10;
+    var dropbox_url = "https://www.dropbox.com/s/kdtghxs5c54vuvv/dataGrupos.json?dl=1";
+
+    d3.json(dropbox_url, function(error, data){
+      console.log("Successfully loaded file from Dropbox!");
+      console.log(data);
+    });
+    var viz1 = d3.select("#grupo1");
+    var ancho = viz1.style("width").substring(0, viz1.style("width").length - 2) - 10;
     var PromiseWrapper = (xhr, d) => new Promise(resolve => xhr(d, p => resolve(p)));
 
     Promise
@@ -1143,8 +1149,8 @@
             });
 
     function visGrupos(data,datap) {
-      console.log(data);
-      console.log(datap);
+      //console.log(data);
+      //console.log(datap);
         var myFormatters = d3.locale({
             "decimal": ",",
             "thousands": ".",
@@ -1445,7 +1451,6 @@
             var grupo = data[i]["group"];
             var GRUPO = grupo.toUpperCase();
             if(data[i]["win_group"]==1){
-                console.log(GRUPO);
                 pacla["1° "+GRUPO]= data[i];
             }else if(data[i]["second_group"]==1){
                 pacla["2° "+GRUPO]=data[i];
@@ -1454,7 +1459,6 @@
             }
         }
 
-        console.log(pacla);
 
         var ab = 0.15;
         var sep = (1-(4*ab))/3;
@@ -1516,8 +1520,8 @@
                     .style("vertical-align", "middle")
                     .text((Math.round( (pacla[clasif[n]]["semi"]*100) * 10 ) / 10)+"%");
             }
-            aux = parseInt(n/2);
-            asd = [ n, n, aux+8];
+            aux2 = parseInt(n/2);
+            asd = [ n, n, aux2+8];
             d3.select("#bracket")
                 .append("path")
                 .attr("d", lineabra(indi))
