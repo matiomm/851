@@ -388,37 +388,24 @@
                 </div>
             </div>
         </section>
-          <!--<section class="concurso">
+          <section class="concurso">
               <div id="cct">
                   <div class="row no-gutters" id="titulo-concurso">
                       <div class="col-1" style="text-align: left;padding-right: 10px"><img id="btn-show" src="img/flecha-up-gris.png" onclick="mostrar_cct()" style="max-width: 80%;cursor:pointer;"></div>
-                      <div class="col-10">Participa ¿Cuáles serán los resultados de Chile vs Tailandia y Chile vs Ecuador?</div>
+                      <div class="col-10">Participa ¿Cuál será el resultado de Chile vs Uruguay?</div>
                       <div class="col-1" style="text-align: right;padding-left: 10px"><img id="btn-show" src="img/cerrar.png" onclick="cerrar_cct()" style="max-width: 80%;cursor:pointer;"></div>
                   </div>
-                  <form method="post" action="proceso3.php" target="_blank" id="conchta">
+                  <form method="post" action="proceso2.php" target="_blank" id="conchta">
                   <div class="form-row" align="center" style="margin-top: 10px;">
-                      <div class="col-lg-6">
-                          <table>
-                              <tbody>
-                              <tr>
-                                  <td width="20%"><img src="banderas/Tailandia30x20.png" alt="Tailandia" style='border:1px solid lightgray;'></td>
-                                  <td width="25%"><input name="gt" type="number" class="form-control" max="99" min="0" required></td>
-                                  <td>-</td>
-                                  <td width="25%"><input name="gc" type="number" class="form-control" max="99" min="0" required></td>
-                                  <td width="20%"><img src="banderas/Chile30x20.png" alt="Chile" style='border:1px solid lightgray;'></td>
-                              </tr>
-                              </tbody>
-                          </table>
-                      </div>
                       <div class="col-lg-12">
                           <table>
                               <tbody>
                               <tr>
-                                  <td width="20%"><img src="banderas/Ecuador30x20.png" alt="Ecuador" style='border:1px solid lightgray;'></td>
-                                  <td width="25%"><input name="ge" type="number" class="form-control" max="99" min="0" required></td>
-                                  <td>-</td>
-                                  <td width="25%"><input name="gc2" type="number" class="form-control" max="99" min="0" required></td>
                                   <td width="20%"><img src="banderas/Chile30x20.png" alt="Chile" style='border:1px solid lightgray;'></td>
+                                  <td width="25%"><input name="gc" type="number" class="form-control" max="99" min="0" required></td>
+                                  <td>-</td>
+                                  <td width="25%"><input name="gu" type="number" class="form-control" max="99" min="0" required></td>
+                                  <td width="20%"><img src="banderas/Uruguay30x20.png" alt="Uruguay" style='border:1px solid lightgray;'></td>
                               </tr>
                               </tbody>
                           </table>
@@ -451,7 +438,7 @@
                   </div>
               </form>
               </div>
-          </section>-->
+          </section>
         <div id="partidos" class="partidos" style="display: none">
           <img src="img/banner-partidos.png" class="tabla img-tabla">
 
@@ -1129,12 +1116,6 @@
 <script type="text/javascript">
   window.onload = function () {
     console.log("wena compare");
-    var dropbox_url = "https://www.dropbox.com/s/kdtghxs5c54vuvv/dataGrupos.json?dl=1";
-
-    d3.json(dropbox_url, function(error, data){
-      console.log("Successfully loaded file from Dropbox!");
-      console.log(data);
-    });
     var viz1 = d3.select("#grupo1");
     var ancho = viz1.style("width").substring(0, viz1.style("width").length - 2) - 10;
     var PromiseWrapper = (xhr, d) => new Promise(resolve => xhr(d, p => resolve(p)));
