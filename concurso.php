@@ -424,7 +424,7 @@
                     $visitas = ["Venezuela","Brasil","Argentina","Paraguay","Uruguay","Japón"];
                     for ($i = 13; $i <= 18; $i++) {
                         echo "<tr><td><img src=\"banderas/".$locales[$i-13]."30x20.png\" alt=\"".$locales[$i-13]."\" style='border:1px solid lightgray;'></td>";
-                        if($i<=16){
+                        if($i<=18){
 				echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"l\" disabled></td>";
                         	echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"e\" disabled></td>";
                         	echo "<td><input type=\"radio\" name=\"partido".$i."\" value=\"v\" disabled></td>";
