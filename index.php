@@ -439,7 +439,22 @@
               </form>
               </div>
           </section>-->
-        <div id="partidos" class="partidos" style="display: none">
+          <div id="eliminatoria" class="eliminatoria">
+              <img src="img/banner-eliminacion.png" class="tabla img-tabla">
+
+              <div class="row" id="titulo-bracket">
+                  <div class="col-3">Cuartos</div>
+                  <div class="col-3">Semis</div>
+                  <div class="col-3">Final</div>
+                  <div class="col-3">Campeón</div>
+              </div>
+              <div class="row no-gutters">
+                  <div class="col-lg-12" id="divbracket" aling="center">
+                  </div>
+              </div>
+          </div>
+
+          <div id="partidos" class="partidos" style="display: none">
           <img src="img/banner-partidos.png" class="tabla img-tabla">
 
 
@@ -930,6 +945,7 @@
 
           </script>
         </div>
+          <div id="espacio" style="height: 1000px"></div>
         <div id="grupos" class="grupos" style="background-color:white" >
           <img src="img/banner-grupos.png" class="tabla img-tabla">
 
@@ -1088,20 +1104,7 @@
           </div>
 
         </div>
-          <div id="eliminatoria" class="eliminatoria">
-              <img src="img/banner-eliminacion.png" class="tabla img-tabla">
 
-              <div class="row" id="titulo-bracket">
-                  <div class="col-3">Cuartos</div>
-                  <div class="col-3">Semis</div>
-                  <div class="col-3">Final</div>
-                  <div class="col-3">Campeón</div>
-              </div>
-              <div class="row no-gutters">
-                  <div class="col-lg-12" id="divbracket" aling="center">
-                  </div>
-              </div>
-          </div>
         <div id="probabilidades" class="probabilidades" style="display:none">
           <img src="img/banner-rusia.png" class="tabla img-tabla">
           <div class="row">
@@ -1409,10 +1412,10 @@
           tr = tbody.append("tr");
           tr.append("td").style("text-align","center").append("img").attr("src","banderas/"+data[i].country+"30x20.png");
           tr.append("td").style("border-right","2px solid").style("font-weight","bold").text(data[i].country);
-          tr.append("td").style("text-align","center").style("background-color", "rgba(255, 94, 47, "+data[i].quarter+")").text( (parseFloat(data[i].quarter)<0.01) ? ("<1%") : ((Math.round( (data[i].quarter*100) * 10 ) / 10)+"%") );
-          tr.append("td").style("text-align","center").style("background-color", "rgba(255, 94, 47, "+data[i].semi+")").text( (parseFloat(data[i].semi)<0.01) ? ("<1%") : ((Math.round( (data[i].semi*100) * 10 ) / 10)+"%") );
-          tr.append("td").style("text-align","center").style("background-color", "rgba(255, 94, 47, "+data[i].cup+")").text( (parseFloat(data[i].cup)<0.01) ? ("<1%") : ((Math.round( (data[i].cup*100) * 10 ) / 10)+"%") );
-          tr.append("td").style("text-align","center").style("background-color", "rgba(255, 94, 47, "+data[i].win+")").text( (parseFloat(data[i].win)<0.01) ? ("<1%") : ((Math.round( (data[i].win*100) * 10 ) / 10)+"%") );
+          tr.append("td").style("text-align","center").style("background-color", "rgba(255, 94, 47, "+data[i].quarter+")").text( (Math.round( (data[i].quarter*100) * 10 ) / 10)+"%");
+          tr.append("td").style("text-align","center").style("background-color", "rgba(255, 94, 47, "+data[i].semi+")").text( (Math.round( (data[i].semi*100) * 10 ) / 10)+"%");
+          tr.append("td").style("text-align","center").style("background-color", "rgba(255, 94, 47, "+data[i].cup+")").text( (Math.round( (data[i].cup*100) * 10 ) / 10)+"%");
+          tr.append("td").style("text-align","center").style("background-color", "rgba(255, 94, 47, "+data[i].win+")").text( (Math.round( (data[i].win*100) * 10 ) / 10)+"%");
       }
       sortTable(2);
 
@@ -1425,7 +1428,7 @@
         var alto2 = 1.12*ancho2;
         viz2.attr("height",alto2);
 
-        var clasif = ["1° A","3° B/C","2° A","2° B","1° B","2° C","1° C","3° A"];
+        var clasif = ["1° A","3° B","2° A","2° B","1° B","2° C","1° C","3° A"];
 
         var pacla = {};
         for (i in data){
@@ -1562,7 +1565,8 @@
                 j=j+(Math.pow(2,i)-1);
             }
         }
-        d3.select("#eliminatoria").style("display","none");
+        d3.select("#grupos").style("display","none");
+        d3.select("#espacio").style("display","none");
         /////////////////////////////////////////////////////////
 
 
