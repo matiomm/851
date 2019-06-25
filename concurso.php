@@ -449,7 +449,7 @@
                 <select name="campeon" class="form-control">
                     <?php
                         $paises = ["Argentina", "Bolivia", "Brasil", "Catar", "Chile", "Colombia", "Ecuador", "Japón", "Paraguay", "Perú", "Uruguay", "Venezuela"];
-                        for ($i=0; $i<11; $i++){
+                        for ($i=0; $i<=11; $i++){
                             if ($i==4){
                                 echo "<option value=".$paises[$i]." selected>".$paises[$i]."</option>";
                             }else{
@@ -463,7 +463,7 @@
             <div class="col-lg-3">
                 <select name= "subcampeon" class="form-control">
                     <?php
-                    for ($i=0; $i<11; $i++){
+                    for ($i=0; $i<=11; $i++){
                         echo "<option value=".$paises[$i].">".$paises[$i]."</option>";
                     }
                     ?>
@@ -473,7 +473,7 @@
             <div class="col-lg-3">
                 <select name= "tercero" class="form-control">
                     <?php
-                    for ($i=0; $i<11; $i++){
+                    for ($i=0; $i<=11; $i++){
                         if ($i==1){
                             echo "<option value=".$paises[$i]." selected>".$paises[$i]."</option>";
                         }else{
