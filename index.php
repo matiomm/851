@@ -388,11 +388,11 @@
                 </div>
             </div>
         </section>
-	<!--          <section class="concurso">
+	         <section class="concurso">
               <div id="cct">
                   <div class="row no-gutters" id="titulo-concurso">
                       <div class="col-1" style="text-align: left;padding-right: 10px"><img id="btn-show" src="img/flecha-up-gris.png" onclick="mostrar_cct()" style="max-width: 80%;cursor:pointer;"></div>
-                      <div class="col-10">Participa ¿Cuál será el resultado de Chile vs Uruguay?</div>
+                      <div class="col-10">Participa ¿Cuál será el resultado de Chile vs Colombia?</div>
                       <div class="col-1" style="text-align: right;padding-left: 10px"><img id="btn-show" src="img/cerrar.png" onclick="cerrar_cct()" style="max-width: 80%;cursor:pointer;"></div>
                   </div>
                   <form method="post" action="proceso2.php" target="_blank" id="conchta">
@@ -401,11 +401,11 @@
                           <table>
                               <tbody>
                               <tr>
-                                  <td width="20%"><img src="banderas/Chile30x20.png" alt="Chile" style='border:1px solid lightgray;'></td>
-                                  <td width="25%"><input name="gc" type="number" class="form-control" max="99" min="0" required></td>
+                                  <td width="20%"><img src="banderas/Colombia30x20.png" alt="Colombia" style='border:1px solid lightgray;'></td>
+                                  <td width="25%"><input name="gco" type="number" class="form-control" max="99" min="0" required></td>
                                   <td>-</td>
-                                  <td width="25%"><input name="gu" type="number" class="form-control" max="99" min="0" required></td>
-                                  <td width="20%"><img src="banderas/Uruguay30x20.png" alt="Uruguay" style='border:1px solid lightgray;'></td>
+                                  <td width="25%"><input name="gc" type="number" class="form-control" max="99" min="0" required></td>
+                                  <td width="20%"><img src="banderas/Chile30x20.png" alt="Chile" style='border:1px solid lightgray;'></td>
                               </tr>
                               </tbody>
                           </table>
@@ -438,7 +438,7 @@
                   </div>
               </form>
               </div>
-          </section>-->
+          </section>
           <div id="eliminatoria" class="eliminatoria">
               <img src="img/banner-eliminacion.png" class="tabla img-tabla">
 
