@@ -1539,9 +1539,11 @@
                     });
                 var imagen = 'img/logo_CA30x30.png';
                 var label = clasif[contador];
+                var wi = h*0.5;
                 if (pacla[clasif[contador]]){
                     imagen = 'banderas/'+pacla[clasif[contador]].country+'300x200.png';
                     label = pacla[clasif[contador]]["country_id"];
+                    wi = wi*3/2;
                 }
                 d3.select("#bracket")
                     .append('svg:image')
@@ -1549,7 +1551,8 @@
                         'xlink:href': imagen,  // can also add svg file here
                         x: x + 0.05 * w,
                         y: y + 0.25 * h,
-                        height: h * 0.5
+                        height: h * 0.5,
+                        width: wi
                     });
 
                 d3.select("#bracket")

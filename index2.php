@@ -1104,7 +1104,7 @@
         <div id="eliminatoria" class="eliminatoria" style="display:block">
           <img src="img/banner-eliminacion.png" class="tabla img-tabla">
 
-            <div class="row" id="titulo-bracket">
+            <div class="row no-gutters" id="titulo-bracket">
                 <div class="col-3">Cuartos</div>
                 <div class="col-3">Semis</div>
                 <div class="col-3">Final</div>
@@ -1467,7 +1467,7 @@
         var hsep = (1-(8*hb))/7;
 
         var borde = 0.01;
-        var bordeh = 0.01;
+        var bordeh = 0.05;
 
         xbra = [];
         ybra = [];
