@@ -387,7 +387,7 @@
                     <input class="logo-movil" type="image" src="img-movil/CA2019/partidos.png" onclick="Mostrar_ocultar_partidos()" width="100%"/>
                 </div>
             </div>
-        </section>
+        </section><!--
 	         <section class="concurso">
               <div id="cct">
                   <div class="row no-gutters" id="titulo-concurso">
@@ -438,7 +438,7 @@
                   </div>
               </form>
               </div>
-          </section>
+          </section>-->
           <div id="eliminatoria" class="eliminatoria">
               <img src="img/banner-eliminacion.png" class="tabla img-tabla">
 
@@ -1446,6 +1446,10 @@
         for (i in clasif){
             pacla2.push(pacla[clasif[i]]);
         }
+        pacla2[0]["semi"]=1;
+        pacla2[1]["semi"]=0;
+        pacla2[2]["semi"]=0;
+        pacla2[3]["semi"]=1;
         var semis = [];
         for (i in pacla2){
             if(pacla2[i]["semi"]==1){
