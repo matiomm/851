@@ -1442,6 +1442,17 @@
                 pacla["3° "+GRUPO]=data[i];
             }
         }
+        var pacla2 = [];
+        for (i in clasif){
+            pacla2.push(pacla[clasif[i]]);
+        }
+        var semis = [];
+        for (i in pacla2){
+            if(pacla2[i]["semi"]==1){
+                semis.push(pacla2[i]);
+            }
+        }
+        console.log(semis);
 
 
         var ab = 0.15;
@@ -1493,26 +1504,53 @@
             if (pacla[clasif[n]]){
                 color = pacla[clasif[n]]["color_home"];
                 opa = pacla[clasif[n]]["semi"];
-                d3.select("#bracket")
-                    .append("text")
-                    .attr("x", (xbra[indi[1]]+xbra[indi[0]])/2)
-                    .attr("y", ybra[n]+ajuste)
-                    .style("fill","black")
-                    .style("font-weight","bold")
-                    .style("text-anchor", "start")
-                    .style("font-size", 20+"px")
-                    .style("vertical-align", "middle")
-                    .text((Math.round( (pacla[clasif[n]]["semi"]*100) * 10 ) / 10)+"%");
+                /*if (opa==0){
+                    opa=1;
+                    color="black";
+                }*/
+            }
+            if (n>=8 && n<8+semis.length){
+                color = semis[n-8]["color_home"];
+                opa = semis[n-8]["cup"];
+                /*if (opa==0){
+                    opa=1;
+                    color="black";
+                }*/
             }
             aux2 = parseInt(n/2);
             asd = [ n, n, aux2+8];
             d3.select("#bracket")
                 .append("path")
                 .attr("d", lineabra(indi))
-                .style("stroke-width", "7px")
+                .style("stroke-width", h/4+"px")
                 .style("fill", "none")
                 .style("opacity",opa)
                 .style("stroke", color);
+
+            if (pacla[clasif[n]]){
+                d3.select("#bracket")
+                    .append("text")
+                    .attr("x", (xbra[indi[0]]+xbra[indi[1]])/2)
+                    .attr("y", ybra[n]+h*0.8/3)
+                    .style("fill","black")
+                    .style("text-shadow",d => (color!="black")?"none":"rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) -2px 0px 0px, rgb(255, 255, 255) 0px 2px 0px, rgb(255, 255, 255) 0px -2px 0px, rgb(255, 255, 255) 1px 1px, rgb(255, 255, 255) -1px -1px 0px, rgb(255, 255, 255) 1px -1px 0px, rgb(255, 255, 255) -1px 1px 0px")
+                    .style("text-anchor", "middle")
+                    .style("font-size", h*0.8+"px")
+                    .style("vertical-align", "middle")
+                    .text((Math.round( (pacla[clasif[n]]["semi"]*100) * 10 ) / 10)+"%");
+            }
+            if (n>=8 && n<8+semis.length){
+                d3.select("#bracket")
+                    .append("text")
+                    .attr("x", (xbra[indi[0]]+xbra[indi[1]])/2)
+                    .attr("y", ybra[n]+h*0.8/3)
+                    .style("fill","black")
+                    .style("text-shadow",d => (color!="black")?"none":"rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) -2px 0px 0px, rgb(255, 255, 255) 0px 2px 0px, rgb(255, 255, 255) 0px -2px 0px, rgb(255, 255, 255) 1px 1px, rgb(255, 255, 255) -1px -1px 0px, rgb(255, 255, 255) 1px -1px 0px, rgb(255, 255, 255) -1px 1px 0px")
+                    .style("text-anchor", "middle")
+                    .style("font-size", h*0.8+"px")
+                    .style("vertical-align", "middle")
+                    .text((Math.round( (semis[n-8]["cup"]*100) * 10 ) / 10)+"%");
+            }
         }
 
         contador=0;
@@ -1522,12 +1560,7 @@
                 y = (bordeh * alto2) + (j + (Math.pow(2, i) - 1) / 2) * (1 - (2 * bordeh)) * alto2 * hb + (j + (Math.pow(2, i) - 1) / 2) * (1 - (2 * bordeh)) * alto2 * hsep;
                 h = ((1 - (2 * bordeh)) * alto2 * hb);
                 w = ((1 - (2 * borde)) * ancho2 * ab);
-                /*d3.select("#bracket")
-                    .append("rect")
-                    .attr("x", x + "px")
-                    .attr("y", y + "px")
-                    .attr("height", h + "px")
-                    .attr("width", w + "px");*/
+
                 d3.select("#bracket")
                     .append('svg:image')
                     .attr({
@@ -1543,6 +1576,11 @@
                 if (pacla[clasif[contador]]){
                     imagen = 'banderas/'+pacla[clasif[contador]].country+'300x200.png';
                     label = pacla[clasif[contador]]["country_id"];
+                    wi = wi*3/2;
+                }
+                if (contador>=8 && contador<8+semis.length){
+                    imagen = 'banderas/'+semis[contador-8].country+'300x200.png';
+                    label = semis[contador-8]["country_id"];
                     wi = wi*3/2;
                 }
                 d3.select("#bracket")
@@ -1567,6 +1605,7 @@
                 contador++;
                 j=j+(Math.pow(2,i)-1);
             }
+
         }
         d3.select("#grupos").style("display","none");
         d3.select("#espacio").style("display","none");
