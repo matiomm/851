@@ -388,7 +388,7 @@
                 </div>
             </div>
         </section>
-	         <section class="concurso">
+	        <!-- <section class="concurso">
               <div id="cct">
                   <div class="row no-gutters" id="titulo-concurso">
                       <div class="col-1" style="text-align: left;padding-right: 10px"><img id="btn-show" src="img/flecha-up-gris.png" onclick="mostrar_cct()" style="max-width: 80%;cursor:pointer;"></div>
@@ -438,7 +438,7 @@
                   </div>
               </form>
               </div>
-          </section>
+          </section>-->
           <div id="eliminatoria" class="eliminatoria">
               <img src="img/banner-eliminacion.png" class="tabla img-tabla">
 
