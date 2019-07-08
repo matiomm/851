@@ -1446,13 +1446,21 @@
         for (i in clasif){
             pacla2.push(pacla[clasif[i]]);
         }
-        pacla2[0]["semi"]=1;
-        pacla2[1]["semi"]=0;
-        pacla2[2]["semi"]=0;
-        pacla2[3]["semi"]=1;
+        pacla2[0]["win"]=1;
+        pacla2[7]["win"]=0;
         var semis = [];
         for (i in pacla2){
             if(pacla2[i]["semi"]==1){
+                semis.push(pacla2[i]);
+            }
+        }
+        for (i in pacla2){
+            if(pacla2[i]["cup"]==1){
+                semis.push(pacla2[i]);
+            }
+        }
+        for (i in pacla2){
+            if(pacla2[i]["win"]==1){
                 semis.push(pacla2[i]);
             }
         }
@@ -1515,7 +1523,12 @@
             }
             if (n>=8 && n<8+semis.length){
                 color = semis[n-8]["color_home"];
-                opa = semis[n-8]["cup"];
+                if (n<12){
+                    opa = semis[n-8]["cup"];
+                }else{
+                    opa = semis[n-8]["win"];
+                }
+
                 /*if (opa==0){
                     opa=1;
                     color="black";
@@ -1544,16 +1557,29 @@
                     .text((Math.round( (pacla[clasif[n]]["semi"]*100) * 10 ) / 10)+"%");
             }
             if (n>=8 && n<8+semis.length){
-                d3.select("#bracket")
-                    .append("text")
-                    .attr("x", (xbra[indi[0]]+xbra[indi[1]])/2)
-                    .attr("y", ybra[n]+h*0.8/3)
-                    .style("fill","black")
-                    .style("text-shadow",d => (color!="black")?"none":"rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) -2px 0px 0px, rgb(255, 255, 255) 0px 2px 0px, rgb(255, 255, 255) 0px -2px 0px, rgb(255, 255, 255) 1px 1px, rgb(255, 255, 255) -1px -1px 0px, rgb(255, 255, 255) 1px -1px 0px, rgb(255, 255, 255) -1px 1px 0px")
-                    .style("text-anchor", "middle")
-                    .style("font-size", h*0.8+"px")
-                    .style("vertical-align", "middle")
-                    .text((Math.round( (semis[n-8]["cup"]*100) * 10 ) / 10)+"%");
+                if (n<12){
+                    d3.select("#bracket")
+                        .append("text")
+                        .attr("x", (xbra[indi[0]]+xbra[indi[1]])/2)
+                        .attr("y", ybra[n]+h*0.8/3)
+                        .style("fill","black")
+                        .style("text-shadow",d => (color!="black")?"none":"rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) -2px 0px 0px, rgb(255, 255, 255) 0px 2px 0px, rgb(255, 255, 255) 0px -2px 0px, rgb(255, 255, 255) 1px 1px, rgb(255, 255, 255) -1px -1px 0px, rgb(255, 255, 255) 1px -1px 0px, rgb(255, 255, 255) -1px 1px 0px")
+                        .style("text-anchor", "middle")
+                        .style("font-size", h*0.8+"px")
+                        .style("vertical-align", "middle")
+                        .text((Math.round( (semis[n-8]["cup"]*100) * 10 ) / 10)+"%");
+                } else {
+                    d3.select("#bracket")
+                        .append("text")
+                        .attr("x", (xbra[indi[0]]+xbra[indi[1]])/2)
+                        .attr("y", ybra[n]+h*0.8/3)
+                        .style("fill","black")
+                        .style("text-shadow",d => (color!="black")?"none":"rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) -2px 0px 0px, rgb(255, 255, 255) 0px 2px 0px, rgb(255, 255, 255) 0px -2px 0px, rgb(255, 255, 255) 1px 1px, rgb(255, 255, 255) -1px -1px 0px, rgb(255, 255, 255) 1px -1px 0px, rgb(255, 255, 255) -1px 1px 0px")
+                        .style("text-anchor", "middle")
+                        .style("font-size", h*0.8+"px")
+                        .style("vertical-align", "middle")
+                        .text((Math.round( (semis[n-8]["win"]*100) * 10 ) / 10)+"%");
+                }
             }
         }
 

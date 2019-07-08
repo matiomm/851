@@ -1,9 +1,9 @@
 <!Doctype html>
 <?php
 $resultadospartidos = ["l","e","v","e","l","v","v","e","l","e","e","v","v","l","v","l","v","e"];
-$campeon = "";
-$subcampeon = "";
-$tercero = "";
+$campeon = "Brasil";
+$subcampeon = "Perú";
+$tercero = "Argentina";
 $db_name = "851";
 $db_user = "ochocincouno";
 $db_pass = "Base851-fcfm";
