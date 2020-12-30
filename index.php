@@ -378,9 +378,22 @@
 
           <div>
               <div class="row justify-content-center flex-grow-1">
-                  <div class="col-lg-12">
+                  <div class="col-lg-12" style="text-align: center">
+                      <h1>Resultados</h1>
+                  </div>
+              </div>
+              <div class="row justify-content-center flex-grow-1">
+                  <div class="col-lg-5">
                       <img src="tabla.PNG">
                   </div>
+                  <div class="col-lg-7">
+                      <p>La tabla está ordenada de mayor probabilidad de descender a menor, es decir, la Universidad de Concepción (83%) es el equipo que más probabilidad tiene de descender, seguido de Iquique (71%), Colo Colo (64%) y Coquimbo Unido (42%). Luego, asoma Audax Italiano (14%) muy alejado de los otros 4 clubes.</p>
+                      <p>Probabilidad primer cupo (1): porcentaje de veces que terminó último en la Tabla Absoluta.
+                          Probabilidad segundo cupo (2): porcentaje de veces que terminó último en la Tabla Ponderada o alguno de los casos relacionados.
+                          Probabilidad de tercer cupo (3): porcentaje de veces que descendió por haber perdido el partido definitorio o descender automáticamente para los casos difusos. Para el partido de definición se asume que será en terreno neutral y se le sacó el efecto de la localía.
+                          Probabilidad de descender (Prob Desc): suma de las 3 columnas.</p>
+                  </div>
+
               </div>
           </div>
       </section>
