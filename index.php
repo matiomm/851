@@ -351,43 +351,62 @@
   }
 </script>
 
-<body style="min-width:380px">
+<style>
+    html,body{height:100%;}
+
+    .bg-purple {
+        background: rgb(48,0,50);
+    }
+    .bg-gray {
+        background: rgb(74,74,74);
+    }
+    .bg-blue {
+        background: rgb(50,101,196);
+    }
+    .bg-red {
+        background: rgb(196,50,53);
+    }
+</style>
+
+<body style="min-width:380px;">
   <?php include 'header.php'; ?>
-  <main class="main">
+  <main class="main" style="height: 65%">
       <br>
-    <div class="cont">
+    <div class="container">
 
       <section id="rusia" class="rusia">
 
-        <div id="probabilidades" class="probabilidades">
-          <img src="img/banner-rusia.png" class="tabla img-tabla">
-          <div class="row">
-              <div class="col-lg-12" id="tabla-probabilidades">
+          <div>
+              <div class="row justify-content-center flex-grow-1">
+                  <div class="col-lg-12">
+                      <img src="tabla.PNG">
+                  </div>
               </div>
           </div>
-        </div>
       </section>
 
   </main>
+
 
 <script type="text/javascript">
   window.onload = function () {
     console.log("wena compare");
 
-    Promise
-            .all([
-              d3.csv("resumen_descenso.csv")
-            ])
-            .then(resolve => {
-              visGrupos(resolve[0]);
-            });
+    // Promise
+    //         .all([
+    //           d3.csv("resumen_descenso.csv")
+    //         ])
+    //         .then(resolve => {
+    //           visGrupos(resolve[0]);
+    //         });
 
     function visGrupos(data) {
       console.log(data);
 
       let colorScale = d3.scaleQuantize()
           .domain([0,1])
-          .range(colorbrewer.RdYlGn[9].reverse());
+          //.range(colorbrewer.RdYlGn[9].reverse());
+            .range(colorbrewer.Reds[9]);
 
       tabla = d3.select("#tabla-probabilidades").append("table").attr("class","tablepress tablepress-id-2 wc").attr("id","tablepress-4").style("width","100%");
       thead = tabla.append("thead");
@@ -423,23 +442,7 @@
 
 </script>
 
-  <footer class="footer">
-    <div class="footer fcfm-desktop">
-      <img src="img/logo-fcfm.png" class="footer img-footer">
-      <img src="img/logo-isci.png" class="footer img-footer">
-      <img src="img/logo-dii.png" class="footer img-footer" width="25%">
-    </div>
-    <div class="footer fcfm-movil" style="display:none">
-      <img src="img-movil/logo-fcfm-movil.png" class="footer img-footer">
-      <br>
-      <img src="img-movil/logo-isci-movil.png" class="footer img-footer">
-      <br>
-      <img src="img-movil/logo-dii-movil.png" class="footer img-footer">
-    </div>
-    <div class="derechos">
-      <h3 class="header_h4" size="3" style="color:white">Todos los derechos reservados para 851</h3>
-    </div>
-  </footer>
+  <?php include 'footer.php'; ?>
 </body>
 
 </html>
