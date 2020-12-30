@@ -27,7 +27,10 @@
         <nav class="navigation">
             <ul>
                 <li>
-                    <a href="index.php">Predicciones</a>
+                    <a href="index.php">Campeonato Nacional 2020</a>
+                </li>
+                <li>
+                    <a href="CA2019.php">Copa América 2019</a>
                 </li>
                 <li>
                     <a href="modelos.php">Modelos</a>
