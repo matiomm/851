@@ -38,9 +38,6 @@
                 <li>
                     <a href="contacto.php">Contacto</a>
                 </li>
-                <li>
-                    <a href="resultadosconcurso.php">Concurso</a>
-                </li>
             </ul>
         </nav>
     </div>
